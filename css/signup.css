@@ -1,0 +1,17 @@
+form{
+    text-align: center;
+    
+}
+.container {
+    padding: 16px;
+    background-color: white;
+  }
+  input[type=text], input[type=email], input[type=number],input[type=file] ,input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
