@@ -3,36 +3,3 @@
     margin: 0;
     background:RGB(235	235	235);
 }
-
-.amazonImg{
-    float: right;
-    width:150px;
-    
-}
-.kindleLogo{
-    width: 300px;
-    margin-left: 50px;
-}
-.profileContent{
-    color: orange;
-    
-}
-main .bgBar{
-    right:0;
-    top:180px;
-    width: 70%;
-    background-color: RGB(250,153,36);
-    margin-right: 50px;
-    margin-top:-10px;
-    position:absolute;
-    height:490px
-    
-    
-}
-main h1{
-    font-size: 100px;
-    padding-left: 100px;
-}
-main{
-    position: relative;  
-}
