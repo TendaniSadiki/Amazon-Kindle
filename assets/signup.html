@@ -10,20 +10,29 @@
 <body>
     <form>
         <div class="container">
-            <label for="names">Name and Surname</label>
-            <input type="text" id="nameUser" name="names" placeholder="Name and Surname">
+            <h1>Sign Up</h1>
+            <input type="text" id="nameUser" name="names" placeholder="Name" value="">
             <br>
-            <label for="email">email</label>
+            <input type="text" id="sUser" name="surname" placeholder="Surname">
+            <br>
             <input type="email" id="email" name="email" placeholder="E-mail">
             <br>
-            <label for="number">Phone number</label>
-            <input type="number" id="phoneNumber" name="number" placeholder="Phone number">
+            <input type="number" id="phoneNumber" name="number" placeholder="Phone number" maxlength="10" minlength ="10">
             <br>
-            <label for="img">Select image:</label>
+                <span>
+                <label for="img">Select image:</label>
+                <br>
+                <input type="file" id="img" name="img"  accept="image/*">
+                 </span>
+            <input type="password" id="pwd" name="pwd" placeholder="Password" >
+            <button id="signupButton" onclick="signUp();" >Sign Up</button>
             <br>
-            <input type="file" id="img" name="img" accept="image/*">
-            <button>Sign In</button>
+            <span class="signinLink">
+                <i>Already have an account?</i>
+                <a href="./signin.html">click here</a>
+            </span>
         </div>
     </form>
+    <script src="../js/index.js" ></script>
 </body>
 </html>
