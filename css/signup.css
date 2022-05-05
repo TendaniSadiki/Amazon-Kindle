@@ -11,7 +11,7 @@ form{
     background: #f1f1f1;
     border-radius: 15px;  
 }
-  input[type=text], input[type=email], input[type=number],input[type=file] ,input[type=password] {
+  input[type=text], input[type=email], input[type=tel],input[type=file] ,input[type=password] {
     width: 80%;
     padding: 15px;
     display: inline-block;
