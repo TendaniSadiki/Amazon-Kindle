@@ -8,7 +8,8 @@ form{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: #f1f1f1;  
+    background: #f1f1f1;
+    border-radius: 15px;  
 }
   input[type=text], input[type=email], input[type=number],input[type=file] ,input[type=password] {
     width: 80%;
@@ -21,6 +22,7 @@ form{
     border-bottom: 1px groove  RGB(250,153,36);
   }
   #signupButton{
+    text-decoration: none;
     padding: 10px;
     margin: 15px;
     width: 80px;
@@ -29,9 +31,6 @@ form{
     background-color:RGB(250,153,36);
     border-radius: 15px;
     cursor: pointer;
-  }
-  #sltImg{
-    
   }
   span a{
     text-decoration: none ;

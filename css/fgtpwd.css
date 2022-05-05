@@ -10,10 +10,10 @@
       transform: translate(-50%, -50%);
       background: #f1f1f1;
       border-radius: 15px;
-         
+      width: 60%;
+      height: 200px;    
   }
-
-    input[type=text], input[type=email], input[type=number],input[type=file] ,input[type=password] {
+    input[type=email] {
       width: 80%;
       padding: 15px;
       border: none;
@@ -28,22 +28,25 @@
      text-decoration: none;
      color: black;
    }
-    #signupButton{
-      padding: 10px;
-      margin: 15px;
-      width: 80px;
-    }
-    #signupButton:hover{
-      background-color:RGB(250,153,36);
-      border-radius: 15px;
-      cursor: pointer;
-    }
-    span a{
-      text-decoration: none ;
-    }
-    .signinLink{
-      margin: 10px;
-    }
+   .bckbtn{
+    color: black;
+    text-decoration: none;
+    margin-top: 25px;
+    padding: 20px;
+    font-size: 3rem;
+   }
+   .rstPwd{
+        text-decoration: none;
+        padding: 10px;
+        margin: 15px;
+        width: 140px;
+        cursor: pointer;
+      }
+   .rstpwd:hover{
+    background-color:RGB(250,153,36);
+    border-radius: 15px;
+    
+   }
 
 @media only screen and (max-width: 600px) {
         body {
