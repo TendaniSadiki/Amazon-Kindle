@@ -5,6 +5,10 @@ function signUp(){
     const password = document.getElementById('phoneNumber');
     
     console.log(fname);
+    console.log(surname);
+    console.log(email);
+    console.log(password);
+    
 
 }
 signUp()

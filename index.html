@@ -4,24 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kindle</title>
-    <link rel="stylesheet" href="./css/style.css" >
+    <title>Sign In</title>
+    <link rel="stylesheet" href="./css/signin.css"> 
 </head>
 <body>
-    <main>
-        <div class="kindleContent">
-            <div>
-                <img src="./assets/Kindle.png" alt="Kindle logo" class="kindleLogo" >
-                <img src="./assets/amazon-png-logo-vector-1.png" class="amazonImg" alt="Amazon logo">
-            </div>
-            <div class="bgBar">
-                Orange
-            </div>
-            <div class="profileContent">
+    <form >
+        <div class="container">
+            <h1>Sign In</h1>
+            <label for="email"></label>
+            <input type="email" id="email" name="email" placeholder="E-mail">
+            <br>
+            <input type="number" id="phoneNumber" name="number" placeholder="Phone number">
+            
+            <input type="password" id="pwd" name="pwd" placeholder="Password" >
+            <button id="signupButton" >Sign In</button>
+            <br>
+            <span>
+                <a href="../assets/forgotpwd.html">Forgot password?</a>
+            </span>
 
-            </div>
+
+                <a href=""></a>
+
+
+            <span class="signinLink">
+                <i>Don't have an account?</i>
+                <a href="./assets/signup.html">click here</a>
+            </span>
         </div>
-    </main>
-    <script src="./js/index.js" ></script>
+    </form>
 </body>
 </html>
