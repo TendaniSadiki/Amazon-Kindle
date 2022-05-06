@@ -11,13 +11,12 @@
 </head>
 <body>
     <header>
-        <table id="headerTable">
-            <tr>
-                <td>
+        <div id="headerTable">
+                <div>
                     <img class="logo" src="../assets/Kindle.png" alt="Kindle logo">
-                </td>
-                <td align="right">
-                    <nav>
+                </div>
+                <div class="navContent">
+                    <nav style="right:0;">
                         <a href="#">
                            <input type="search" placeholder="Search your books">
                            <button class="fas fa-search"></button>
@@ -26,33 +25,31 @@
                         <a href="#">Futured</a>
                         <a href="#">Icon</a>
                     </nav>
-                </td>
-            </tr>
-        </table>
+                </div>
+            </div>
     </header>
     <main>
         <div class="kindleContent">
-           <table>
-               <tr>
-                   <th align="left" >
-                       <div style="background-color: #dfd7ce;">
+           
+                       <div class="profileContent">
                         <img src="./bookImg/profile.jpg" alt="profile picture" width="150px" width="150px">
-                           <h3>Welcome Back</h3>
-                           <h1>Sarah</h1>
+                           <h3>Welcome <br>Back</h3>
+                           <p class="username" >Sarah</p>
+                           <br>
                        </div>
-                       
-                   </th>
                    <br>
-                   <th align="left" >My Kindle Board</th>
-                   <th align="left" >Collection</th>
-                   <th align="left" >Saved</th>
-                   <th align="left" >Profile</th>
-                   <th align="left" >Log out</th>
-                   <th align="left" >7</th>    
-               </tr>
-           </table>
+                <div class="sidebarWrapper">
+                    <ul>
+                    <li class="sidebarContent"><span> <img src="./bookImg/k.png" class="kIcon" > My Kindle Board</span> </li>
+                    <li class="sidebarContent"><span> <img src="../assets/bookImg/update.png" > Collections</span></li>
+                    <li class="sidebarContent"><span> <img class="savedIcon" src="../assets/bookImg/bookmark-ribbon_icon-icons.com_72842.ico" > Saved</span</li>
+                    <li class="sidebarContent"><span> <i class="fas fa-user"></i> Profile</span</li>
+                    <li class="sidebarContent"><span> <i class="fas fa-sign-out-alt"></i> Logout</span</li>
+                    <li class="sidebarContent"><span> <img src="../assets/amazon-png-logo-vector-1.png" width="100px" height="100px" > </span></li>
+                    </ul>  
+                </div> 
         </div>
     </main>
-    <script src="../js/index.js" ></script>
+<script src="../js/index.js" ></script>
 </body>
 </html>

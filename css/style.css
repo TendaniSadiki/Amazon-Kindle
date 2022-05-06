@@ -3,7 +3,7 @@ body{
     margin: 0;
     height: auto;
     background: #ebebeb;
-    border-radius: 15px;
+    border-radius: 17px;
     width: 95%;
     margin: 48px;
     margin-top: 15px;
@@ -22,6 +22,59 @@ body{
 }
 .logo{
     margin-top: 0px;
+    margin-left: 200px;
     width: 300px;
     height: 300px;
+}
+.profileContent{
+    margin-top: -300px; 
+    background-color: #dfd7ce;
+    width: 10%;
+    text-align: center;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.profileContent img{
+    border-radius: 15px;
+    margin-top: 30px;
+    width: 80px;
+    height: 50px;
+}
+.username{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: -10px;
+    
+}
+.sidebarContent{
+    margin: 40px;
+    margin-left: 0px;
+    width: 10%;
+    list-style: none    ;
+    
+}
+.sidebarWrapper{
+    margin-top: 60px;
+}
+.kIcon{
+    border-radius: 15px;
+}
+.savedIcon{
+    width: 40px;
+    height: 40px;
+}
+.fa-user, .fa-sign-out-alt{
+    font-size: 2rem;
+}
+.navContent{
+    float: right;
+    margin-top: -260px;
+    margin-right: 45px;
+}
+.navContent a{
+    text-decoration: none;
+    margin: 20px;
+}
+.navContent input[type=search]{
+    margin: -34px;
 }
