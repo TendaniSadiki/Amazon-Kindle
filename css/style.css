@@ -1,5 +1,21 @@
- body{
-    padding: 0;
+body{
+     border: 3px black ridge;
     margin: 0;
-    background:RGB(235	235	235);
+    height: auto;
+    background: #ebebeb;
+    border-radius: 15px;
+    width: 95%;
+    margin: 48px;
+    margin-top: 2rem;
+    
+}
+body{
+    min-height: 100%;
+}
+.kindleContent{
+    height: 100%;
+    min-height: 100%;
+    
+    
+    
 }
