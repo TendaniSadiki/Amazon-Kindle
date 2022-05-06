@@ -4,14 +4,14 @@ function signUp(){
     const surname = document.getElementById('sUser').value;
     const email = document.getElementById('email').value;
     const phoneNumber = document.getElementById('phoneNumber').value;
-    const pwd = document.getElementById('pwd').value;
+    const pwd = 12345; 
+    const output =  document.getElementById('pwd').innerHTML;
 
     
-    console.log(fname);
-    console.log(surname);
-    console.log(email);
-    console.log(phoneNumber);
-    console.log(pwd);
+    if(pwd == output){
+        console.log("Success")
+    }
 
 }
+
 signUp()
