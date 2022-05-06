@@ -7,6 +7,7 @@ body{
     margin-top: 15px;
     margin-bottom: 15px;
     
+    
 }
 body{
     min-height: 100%;
@@ -84,4 +85,11 @@ body{
 .readlastTime{
     margin-left: 250px;
     margin-top: -750px;
+}
+.readlastTime ul{
+    display: inline-flex;
+    
+}
+.readlastTime ul li{
+    margin: 100px;
 }
