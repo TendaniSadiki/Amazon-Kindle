@@ -22,6 +22,9 @@
       cursor: pointer;
       border-bottom: 1px groove  RGB(250,153,36);
     }
+    .resetHeading{
+      padding: 10px;
+    }
    .forgotpwd{
      
      margin: 30px;
