@@ -1,11 +1,9 @@
 body{
-     border: 3px black ridge;
+
     margin: 0;
     height: auto;
     background: #ebebeb;
-    border-radius: 17px;
     width: 95%;
-    margin: 48px;
     margin-top: 15px;
     margin-bottom: 15px;
     
@@ -16,9 +14,6 @@ body{
 .kindleContent{
     height: 100%;
     min-height: 100%;
-    
-    
-    
 }
 .logo{
     margin-top: 0px;
@@ -27,7 +22,7 @@ body{
     height: 300px;
 }
 .profileContent{
-    margin-top: -300px; 
+    margin-top: -280px; 
     background-color: #dfd7ce;
     width: 10%;
     text-align: center;
@@ -74,7 +69,19 @@ body{
 .navContent a{
     text-decoration: none;
     margin: 20px;
+    color: #000000;
 }
 .navContent input[type=search]{
     margin: -34px;
+    padding: 18px;
+}
+.navContent input{
+    border-radius: 25px;
+    margin: 20px;
+    height: 60px;
+    width: 400px;
+}
+.readlastTime{
+    margin-left: 250px;
+    margin-top: -750px;
 }
