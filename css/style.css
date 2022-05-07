@@ -1,98 +1,3 @@
-body{
-
-    margin: 0;
-    height: auto;
-    background: #ebebeb;
-    width: 95%;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    
-    
-}
-body{
-    min-height: 100%;
-}
-.kindleContent{
-    height: 100%;
-    min-height: 100%;
-}
-.logo{
-    margin-top: 0px;
-    margin-left: 200px;
-    width: 300px;
-    height: 300px;
-}
-.profileContent{
-    margin-top: -280px; 
-    background-color: #dfd7ce;
-    width: 10%;
-    text-align: center;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-}
-.profileContent img{
-    border-radius: 15px;
-    margin-top: 30px;
-    width: 80px;
-    height: 50px;
-}
-.username{
-    font-size: 2rem;
-    font-weight: bold;
-    margin-top: -10px;
-    
-}
-.sidebarContent{
-    margin: 40px;
-    margin-left: 0px;
-    width: 10%;
-    list-style: none    ;
-    
-}
-.sidebarWrapper{
-    margin-top: 60px;
-}
-.kIcon{
-    border-radius: 15px;
-}
-.savedIcon{
-    width: 40px;
-    height: 40px;
-}
-.fa-user, .fa-sign-out-alt{
-    font-size: 2rem;
-}
-.navContent{
-    float: right;
-    margin-top: -260px;
-    margin-right: 45px;
-}
-.navContent a{
-    text-decoration: none;
-    margin: 20px;
-    color: #000000;
-}
-.navContent input[type=search]{
-    margin: -34px;
-    padding: 18px;
-}
-.navContent input{
-    border-radius: 25px;
-    margin: 20px;
-    height: 60px;
-    width: 400px;
-}
-.readlastTime{
-    margin-left: 250px;
-    margin-top: -750px;
-}
-.readlastTime ul{
-    display: inline-flex;
-    
-}
-.readlastTime ul li{
-    margin: 100px;
-}
 
 @media only screen and (min-width : 320px) {
         
@@ -110,10 +15,209 @@ body{
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
+    body{
 
+        margin: 0;
+        height: auto;
+        background: #ebebeb;
+        width: 95%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        
+        
+    }
+    body{
+        min-height: 100%;
+    }
+    .kindleContent{
+        height: 100%;
+        min-height: 100%;
+    }
+    .logo{
+        margin-top: 0px;
+        margin-left: 90px;
+        width: 300px;
+        height: 300px;
+    }
+    .profileContent{
+        margin-top: -280px; 
+        background-color: #dfd7ce;
+        width: 10%;
+        text-align: center;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+    .profileContent img{
+        border-radius: 15px;
+        margin-top: 30px;
+        width: 80px;
+        height: 50px;
+    }
+    .username{
+        font-size: 2rem;
+        font-weight: bold;
+        margin-top: -10px;
+        
+    }
+    .sidebarContent{
+        margin: 10px;
+        margin-left: -25px;
+        width: 10%;
+        list-style: none    ;
+        
+    }
+    .sidebarWrapper{
+        margin-top: 20px;
+        padding: 10px;
+        margin-left: -16px;
+        
+    }
+    .kIcon{
+        border-radius: 15px;
+        width: 16px;
+        height: 16px;
+    }
+    .collectionIcon{
+        width: 16px;
+        height: 16px;
+        
+    }
+    .savedIcon{
+        width: 12px;
+        height: 12px;
+    }
+    .fa-user, .fa-sign-out-alt{
+        font-size: 1rem;
+    }
+    .navContent{
+        float: right;
+        margin-top: -260px;
+        margin-right: 45px;
+    }
+    .navContent a{
+        text-decoration: none;
+        margin: 20px;
+        color: #000000;
+    }
+    .navContent input[type=search]{
+        margin: -34px;
+        padding: 18px;
+    }
+    .navContent input{
+        border-radius: 25px;
+        margin: 20px;
+        height: 30px;
+        width: 200px;
+    }
+    .readlastTime{
+        margin-left: 250px;
+        margin-top: -750px;
+    }
+    .readlastTime ul{
+        display: inline-flex;
+        
+    }
+    .readlastTime ul li{
+        margin: 100px;
+    }
 }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
+    body{
+
+        margin: 0;
+        height: auto;
+        background: #ebebeb;
+        width: 95%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        overflow: hidden;
+        
+    }
+    body{
+        min-height: 100%;
+    }
+    .kindleContent{
+        height: 100%;
+        min-height: 100%;
+    }
+    .logo{
+        margin-top: 0px;
+        margin-left: 200px;
+        width: 300px;
+        height: 300px;
+    }
+    .profileContent{
+        margin-top: -280px; 
+        background-color: #dfd7ce;
+        width: 10%;
+        text-align: center;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+    .profileContent img{
+        border-radius: 15px;
+        margin-top: 30px;
+        width: 80px;
+        height: 50px;
+    }
+    .username{
+        font-size: 2rem;
+        font-weight: bold;
+        margin-top: -10px;
+        
+    }
+    .sidebarContent{
+        margin: 40px;
+        margin-left: 0px;
+        width: 10%;
+        list-style: none    ;
+        
+    }
+    .sidebarWrapper{
+        margin-top: 60px;
+    }
+    .kIcon{
+        border-radius: 15px;
+    }
+    .savedIcon{
+        width: 40px;
+        height: 40px;
+    }
+    .fa-user, .fa-sign-out-alt{
+        font-size: 2rem;
+    }
+    .navContent{
+        float: right;
+        margin-top: -260px;
+        margin-right: 45px;
+    }
+    .navContent a{
+        text-decoration: none;
+        margin: 20px;
+        color: #000000;
+    }
+    .navContent input[type=search]{
+        margin: -34px;
+        padding: 18px;
+    }
+    .navContent input{
+        border-radius: 25px;
+        margin: 20px;
+        height: 60px;
+        width: 400px;
+    }
+    .readlastTime{
+        margin-left: 250px;
+        margin-top: -750px;
+    }
+    .readlastTime ul{
+        display: inline-flex;
+        
+    }
+    .readlastTime ul li{
+        margin: 100px;
+    }
 
 }
