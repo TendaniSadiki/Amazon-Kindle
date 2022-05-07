@@ -19,7 +19,7 @@
 
         margin: 0;
         height: auto;
-        background: #ebebeb;
+        background: #F6F5F3;
         width: 95%;
         margin-top: 15px;
         margin-bottom: 15px;
@@ -35,14 +35,14 @@
     }
     .logo{
         margin-top: 0px;
-        margin-left: 90px;
+        margin-left: 155px;
         width: 300px;
         height: 300px;
     }
     .profileContent{
         margin-top: -280px; 
         background-color: #dfd7ce;
-        width: 10%;
+        width: 15%;
         text-align: center;
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
@@ -60,7 +60,7 @@
         
     }
     .sidebarContent{
-        margin: 10px;
+        margin: 12px;
         margin-left: -25px;
         width: 10%;
         list-style: none    ;
@@ -91,8 +91,8 @@
     }
     .navContent{
         float: right;
-        margin-top: -260px;
-        margin-right: 45px;
+        margin-top: -280px;
+        margin-right: 15px;
     }
     .navContent a{
         text-decoration: none;
@@ -105,21 +105,70 @@
     }
     .navContent input{
         border-radius: 25px;
-        margin: 20px;
+        margin: 10px;
         height: 30px;
         width: 200px;
     }
     .readlastTime{
         margin-left: 250px;
-        margin-top: -750px;
+        margin-top: -560px;
+        
     }
     .readlastTime ul{
         display: inline-flex;
+        overflow-x: scroll;
+        width: 100%;
+        margin-top: -110px;
         
     }
     .readlastTime ul li{
-        margin: 100px;
+        margin: 60px;
+        background-color: #b30000;
+        list-style: none;
+        
+        width: 200px;
+        
     }
+
+    .newRelease{
+        margin-left: 250px;
+        margin-top: -40px;
+        
+    }
+    
+    .newRelease ul{
+        display: inline-flex;
+        overflow-x: scroll;
+        width: 50%;
+        margin-top: 60px;
+        
+    }
+    .newRelease ul li{
+        margin: 50px;
+        
+    }
+
+    /* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(94, 87, 87); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}
 }
 
 /* Large Devices, Wide Screens */
