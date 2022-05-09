@@ -167,19 +167,17 @@
     }
     .newRelease ul li div img{
         border-radius: 15px;
+    
     }
     .newRelease ul li a{
         text-decoration: none;
     }
-    .famousAuthurs{
+    .famousAuthors{
         height: 100px;
         width: 100px;
-        margin-right: 100px;
-        background-color:#E4E5DF ;
+        background-color:#E4E5DF;
     }
-    .famousAuthurs{
-
-    }
+    
 
     /* width 
 ::-webkit-scrollbar {
