@@ -1,4 +1,6 @@
-
+.readlastTime ul li a{
+    text-decoration: none;
+}
 @media only screen and (min-width : 320px) {
         
 }
@@ -42,7 +44,7 @@
     }
     .profileContent{
         margin-top: -280px; 
-        background-color: #dfd7ce;
+        background-image: linear-gradient(#ECEAE8,#DDD0BB);
         width: 15%;
         text-align: center;
         border-top-right-radius: 15px;
@@ -110,6 +112,9 @@
         height: 30px;
         width: 200px;
     }
+    .productContent{
+        margin-top: 30px;
+    }
     .readlastTime{
         margin-left: 250px;
         margin-top: -560px;
@@ -120,14 +125,60 @@
     }
     .readlastTime ul{
         display: inline-flex;
-        margin-top: -40px;        
+        margin-top: -180px;
+        overflow-x: scroll;
+               
     }
     .readlastTime ul li{
-        margin-left: -45px;
-        padding: 80px;
+        margin-left: -5px;
+        padding: 4px;
         list-style: none;
-        background-color: #b30000;
+        border-radius: 20px; ;
         border: 3px black groove;
+    }
+    .readlastTime ul li div img{
+        border-radius: 15px;
+    }
+    .readlastTime ul li a{
+        text-decoration: none;
+    }
+
+    .newRelease{
+        margin-left: 250px;
+        margin-top: 460px;
+        height: 200px; 
+    }
+    .newRelease h1{
+        margin: -10px;
+        
+    }
+    .newRelease ul{
+        display: inline-flex;
+        margin-top: -180px;
+               
+    }
+    .newRelease ul li{
+        margin-left: 50px;
+        padding: 4px;
+        list-style: none;
+        border-radius: 20px; ;
+        border: 3px black groove;
+        cursor: pointer;
+    }
+    .newRelease ul li div img{
+        border-radius: 15px;
+    }
+    .newRelease ul li a{
+        text-decoration: none;
+    }
+    .famousAuthurs{
+        height: 100px;
+        width: 100px;
+        margin-right: 100px;
+        background-color:#E4E5DF ;
+    }
+    .famousAuthurs{
+
     }
 
     /* width 
@@ -157,11 +208,11 @@
 
         margin: 0;
         height: auto;
-        background: #ebebeb;
+        background: #F6F5F3;
         width: 95%;
         margin-top: 15px;
         margin-bottom: 15px;
-        overflow: hidden;
+       
         
     }
     body{
@@ -204,6 +255,9 @@
         list-style: none    ;
         
     }
+    .sidebarContent a{
+        text-decoration: none   ;
+    }
     .sidebarWrapper{
         margin-top: 60px;
     }
@@ -216,6 +270,11 @@
     }
     .fa-user, .fa-sign-out-alt{
         font-size: 2rem;
+        color: #000000;
+        
+    }
+    .amazonProduct{
+        margin-bottom: -70px;
     }
     .navContent{
         float: right;
@@ -240,13 +299,55 @@
     .readlastTime{
         margin-left: 250px;
         margin-top: -750px;
+        
     }
     .readlastTime ul{
         display: inline-flex;
+        width: 100%;
+        scroll-snap-align: start;
+        
         
     }
+    
+     .fa-arrow-left{
+        
+        margin: 186px;
+        margin-left: 10px;
+    }
+    .fa-arrow-right{
+        
+        margin: 186px;
+        right: -100px;
+        
+    }
+    .fa-arrow-left,.fa-arrow-right{
+        cursor: pointer;
+        position: fixed;
+    }
+
     .readlastTime ul li{
         margin: 100px;
     }
+    .readlastTime ul a{
+        text-decoration: none;
+    }
+    ::-webkit-scrollbar {
+        width: 5px;
+      }
+      ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey; 
+        border-radius: 10px;
+      }
+       
+      
+      ::-webkit-scrollbar-thumb {
+        background: rgb(94, 87, 87); 
+        border-radius: 10px;
+      }
+      
+        */
+      ::-webkit-scrollbar-thumb:hover {
+        background: #b30000; 
+      }
 
 }
