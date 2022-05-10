@@ -1,3 +1,7 @@
+function scrollWin() {
+    window.scrollTo(200, 0);
+  }
+
 document.getElementById('signupButton').onclick = function(){
 let person ={
     name:'Edmond',

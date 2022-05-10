@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <div id="headerTable">
+        <div class="topnav" id="headerTable">
             <div>
                 <img class="logo" src="../assets/Kindle.png" alt="Kindle logo">
             </div>
@@ -24,6 +24,9 @@
                     <a href="#">New release</a>
                     <a href="#">Futured</a>
                     <a href="#">Icon</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fas fa-bars"></i>
+                      </a>
                 </nav>
             </div>
         </div>
@@ -54,7 +57,7 @@
              <h1>Books you read last</h1>
              <ul class="scrollContainer">
                  <div id="horizontalScroll">
-                    <span><i class="fas fa-arrow-left" onclick="goLeft()    " id="scrollLeft"></i></span>
+                    <span><i class="fas fa-arrow-left" onclick="scrollWin()" id="scrollLeft"></i></span>
                     <span><i class="fas fa-arrow-right" onclick="goRight()" id="scrollRight" ></i></span>
                  </div>
                  <li><div><img src="../assets/bookImg/book1.jpg" height="180px"; width="120px" ></div></li>
