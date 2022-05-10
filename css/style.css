@@ -134,7 +134,7 @@
         padding: 4px;
         list-style: none;
         border-radius: 20px; ;
-        border: 3px black groove;
+        
     }
     .readlastTime ul li div img{
         border-radius: 15px;
@@ -162,7 +162,7 @@
         padding: 4px;
         list-style: none;
         border-radius: 20px; ;
-        border: 3px black groove;
+    
         cursor: pointer;
     }
     .newRelease ul li div img{
@@ -299,6 +299,9 @@
         margin-top: -750px;
         
     }
+    .readlastTime h1{
+        margin-left: 0px;
+    }
     .readlastTime ul{
         display: inline-flex;
         width: 100%;
@@ -329,6 +332,70 @@
     .readlastTime ul a{
         text-decoration: none;
     }
+
+    .newRelease{
+        margin-left: 50px;
+        margin-top: 220px;
+        height: 200px; 
+    }
+    .newRelease h1{
+        margin-top: -60px;
+        margin-left: 200px;
+        
+        
+        
+    }
+    .newRelease ul{
+        display: inline-flex;
+        margin-top: 60px;
+        margin-left: 240px;
+               
+    }
+    .newRelease ul li{
+        margin-left: 50px;
+        padding: 20px;
+        list-style: none;
+        border-radius: 20px; ;
+        cursor: pointer;
+    }
+    .newRelease ul li div img{
+        border-radius: 15px;
+    
+    }
+    .newRelease ul li a{
+        text-decoration: none;
+    }
+    .famousAuthors{
+        height: 350px;
+        width: 400px;
+        background-color:#ECECEC    ;
+        float: right;
+        margin-top: -170px;
+        margin-right: -96px;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+    .famousAuthors h1{
+        margin-left: 10px;
+    }
+    .authorImg{
+        width:50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    .famousAuthors ul li{
+        list-style: none;
+        cursor: pointer;
+        display: block;
+        
+    }
+    
+    .authorinfo{
+        margin-left: 65px;
+        margin-top: -65px;
+    }
+
+
     ::-webkit-scrollbar {
         width: 5px;
       }
