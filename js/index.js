@@ -1,5 +1,10 @@
-function scrollWin() {
-    window.scrollTo(200, 0);
+function left() {
+    window.scrollBy(100, 100);
+    alert("pageXOffset: " + window.scrollX + ", scrollY: " + window.scrollY);
+  }
+  function right() {
+    window.scrollBy(100, 100);
+    alert("pageXOffset: " + window.scrollY + ", scrollY: " + window.scrollX);
   }
 
 document.getElementById('signupButton').onclick = function(){
