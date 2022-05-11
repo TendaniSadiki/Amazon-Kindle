@@ -4,110 +4,200 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kindle</title>
-    <link rel="stylesheet" href="../css/style.css" >
-    <link rel = "icon" href = "../assets/download.jfif" type = "image/x-icon"> 
-    <script src="https://kit.fontawesome.com/c46e19eb27.js" crossorigin="anonymous"></script>
+    <!--icon stylesheet link-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!--style stylesheet link-->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/90b2a1b900.js" crossorigin="anonymous"></script>
+    <title>Home</title>
 </head>
 <body>
-    <header>
-        <div class="topnav" id="headerTable">
-            <div>
-                <img class="logo" src="../assets/Kindle.png" alt="Kindle logo">
-            </div>
-            <div class="navContent">
-                <nav    >
-                    <a href="#">
-                       <input type="search" placeholder="Search your books">
-                       <i class="fas fa-search"></i>
-                    </a>
-                    <a href="#">New release</a>
-                    <a href="#">Futured</a>
-                    <a href="#">Icon</a>
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                        <i class="fas fa-bars"></i>
-                      </a>
-                </nav>
-            </div>
-        </div>
-    </header>
-    <main>
-            <div class="profileContent">
-             <img src="./bookImg/profile.jpg" alt="profile picture" width="150px" width="150px">
-                <h3>Welcome <br>Back</h3>
-                <p class="username" >Sarah</p>
-                <br>
-            </div>
-        <br>
-     <div class="sidebarWrapper">
-         <ul>
-         <li class="sidebarContent"><span> <img src="./bookImg/k.png" class="kIcon" > My <br> Kindle Board</span> </li>
-         <li class="sidebarContent"><span> <img src="../assets/bookImg/update.png" class="collectionIcon" > Collections</span></li>
-         <li class="sidebarContent"><span> <img class="savedIcon" src="../assets/bookImg/bookmark-ribbon_icon-icons.com_72842.ico" > Saved</span</li>
-         <li class="sidebarContent"><span> <i class="fas fa-user"></i> Profile</span</li>
-         <li class="sidebarContent"><span> <a href="../index.html"><i class="fas fa-sign-out-alt"></i> Logout </a></span</li>
-            <div class="productContent" >
-            <h1 class="amazonProduct">Product of</h1>
-         <li class="sidebarContent"><span> <img src="../assets/amazon-png-logo-vector-1.png" width="120px" height="100px" > </span></li>
-            </div>
-         </ul>  
-     </div>
-     <div class="kindleContent">
-         <div class="readlastTime">
-             <h1>Books you read last</h1>
-             <ul class="scrollContainer">
-                 <div id="horizontalScroll">
-                    <span><i class="fas fa-arrow-left" onclick="left()" id="scrollLeft"></i></span>
-                    <span><i class="fas fa-arrow-right" onclick="right()" id="scrollRight" ></i></span>
-                 </div>
-                 <li><div><img src="../assets/bookImg/book1.jpg" height="180px"; width="120px" ></div></li>
-                 <li><div><img src="../assets/bookImg/book2.jpg" height="180px"; width="120px" ><div></li>
-                 <li><div><img src="../assets/bookImg/book3.jpg" height="180px"; width="120px" ></div></li>
-                 <li><div><img src="../assets/bookImg/book4.jpg" height="180px"; width="120px" ></div></li>
-                 <li><div><img src="../assets/bookImg/book5.jpg" height="180px"; width="120px" ></div></li>
-                 <li><div><img src="../assets/bookImg/book6.jpg" height="180px"; width="120px" ></div></li>
-                 
-             </ul>
-         </div>
-        </div>
-            <div class="newRelease">
-                <h1>New release</h1>
-                <ul class="newReleaseScroll">
-                    <li><div><img src="../assets/bookImg/r1.jpg" height="180px"; width="120px" ></div></li>
-                    <li><div><img src="../assets/bookImg/r2.jpg" height="180px"; width="120px" ><div></li>
-                    <li><div><img src="../assets/bookImg/r3.jpg" height="180px"; width="120px" ></div></li>
-                    <li><div><img src="../assets/bookImg/r4.jpg" height="180px"; width="120px" ></div></li>
-                    <li><div><img src="../assets/bookImg/r5.jpg" height="180px"; width="120px" ></div></li>
-                </ul>
-            </div>
-        <div class="famousAuthors">
-            <h1>Famous Authors</h1>
-            <ul>
-                <li>
-                    <img src="../assets/bookImg/author1.jpg" class="authorImg" >
-                    <div class="authorinfo">
-                        <h3>P Macdonald</h3>
-                        <p>54 Books</p>
-                    </div>
-                </li>
-                <li>
-                    <img src="../assets/bookImg/aut2.jpg" class="authorImg" >
-                    <div class="authorinfo">
-                        <h3>W Parker</h3>
-                        <p>12 Books</p>
-                    </div>
-                </li>
-                <li>
-                    <img src="../assets/bookImg/aut3.jpg" class="authorImg" >
-                    <div class="authorinfo">
-                        <h3>A Winter</h3>
-                        <p>33    Books</p>
-                    </div>
-                </li>
-            </ul>
+     <main class="wrapper">
+          <div class="sidebar">
+              <!--profile image container-->
+              <div class="imagecontainer">
+                  <!--image profile-->
+                  <div class="profile">
+                       <!--inserting image-->
+                       <img src="../assets/bookImg/profile.jpg" alt="">
+                       <p> Welcome <br>Back<br></p>
+                       <h2> <bold>Sarah</bold></h2>
+                  </div>
+                  <br>
+                  <br>
+                    <ul>
+                      <li><a href="#">
+                           <span class="icon"><img src="../assets/bookImg/k.png" alt=""></span>
+                           <span class="item"> My <br>  Kindle Board</span>
+                      </a></li>
+                      <li><a href="#">
+                          <span class="icon"><i class="fa-solid fa-cube"></i>  </span>
+                          <span class="item"> Collections</span>
+                      </a></li>
+                      <li><a href="#">
+                          <span class="icon"><i class="fa fa-bookmark"></i>  </span>
+                          <span class="item"> Saved</span>
+                      </a></li>
+                      <li><a href="#">
+                          <span class="icon"> <i class="fa fa-user"></i> </span>
+                          <span class="item">  Profile</span>
+                      </a></li>
+                      <li><a href="#">
+                          <span class="icon"><i class="fa-solid fa-right-from-bracket"></i></i>  </span>
+                          <span class="item"> Logout</span>
+                      </a></li>
+                      
+                  </ul>
 
-        </div>
-    </main>
-<script src="../js/index.js" ></script>
+                  <div class="product">
+                  <h2> Product of</h2>
+                  <img src="../assets/amazon-png-logo-vector-1.ico" alt="">
+                  </div>
+                </div>
+            </div>
+            <header>
+                <div class="navContent">  
+                    <nav>
+                        <label class="label1">Kindle <h1>.</h1> </label>  
+                        <a href="#">
+                           <input type="search" placeholder="Search your books">
+                           <i class="fas fa-search"></i>
+                        </a>
+                        <a href="#">New release</a>
+                        <a href="#">Futured</a>
+                        <a href="#">Icon</a>
+                    </nav>
+                </div>
+        </header>
+            <div class="scrollbar">
+                <h1>Books you have read last</h1>
+                <div class="scrollbarwrapper">
+                    <div class="scrollitem"> 
+                        <div class="iteminfo" id="book1">
+                            <img src="../assets/bookImg/book1.jpg" alt="">
+                            <h1>The Silent Wife</h1>
+                            <p>number of pages</p>
+                        </div>
+                    </div>
+                    <div class="scrollitem"> 
+                
+                        <div class="iteminfo" id="book2">
+                            <img src="../assets/bookImg/book2.jpg" id="book2" alt="">
+                            <h1>WildCat</h1>
+                            <p>number of pages</p>
+                        </div>
+                   </div>
+                    <div class="scrollitem"> 
+                        <div class="iteminfo" id="book3"> 
+                            <img src="../assets/bookImg/book3.jpg" alt="">
+                            <h1>Dark Purpose</h1>
+                            <p>number of pages</p>
+                        </div>    
+                    </div>
+                    <div class="scrollitem"> 
+                        <div class="iteminfo" id="book4" >
+                            <img src="../assets/bookImg/book4.jpg" alt="">
+                            <h1>Write My Name Across The Sky</h1>
+                            <p>number of pages</p>
+                        </div>
+                    </div>
+                    <div class="scrollitem"> 
+                        <div class="iteminfo" id="book5">
+                            <img src="../assets/bookImg/book5.jpg" alt="">
+                            <h1>He Who Fights The Monsters</h1>
+                            <p>number of pages</p>
+                        </div>
+                    </div>
+                    <div class="scrollitem"> 
+                        <div class="iteminfo" id="book6">
+                            <img src="../assets/bookImg/book6.jpg" alt="">
+                            <h1> The Match Maker</h1>
+                            <p>number of pages</p>
+                        </div>
+                    </div>
+                    
+                    
+                   
+                </div>          
+             </div>
+           <!--This class is for the right scroll bar-->
+            <div class="scrollbar1">
+                 <h1>New Release</h1>
+                 <!--1 book container-->
+                <div class="books">
+                    <img src="../assets/bookImg/r1.jpg" alt="">
+                    <h3>The Insider</h3>
+                    <p>Matthew Richardson</p>
+                    <button>Slice life</button>
+                </div>
+                <!--2 book container-->
+                <div class="books">
+
+                    <img src="../assets/bookImg/r2.jpg" alt="">
+                    
+                    <h3>Dead Little Lies</h3>
+                    <p>Staphanie DeCAROLIS</p>
+                    <button>Mystery</button>
+                </div>
+                 <!--3 book container-->
+                 <div class="books">
+
+                    <img src="../assets/bookImg/r3.jpg" alt="">
+                    
+                    <h3>If we  Disappear here</h3>
+                    <p>M Hayes</p>
+                    <button>Thriller</button>
+                </div>
+                 <!--4 book container-->
+                 <div class="books">
+
+                    <img src="../assets/bookImg/r4.jpg" alt="">
+                    
+                    <h3>Strangers We Know</h3>
+                    <p>Elle Marr</p>
+                    <button>Action</button>
+                </div>
+                <!--2 book container-->
+                <div class="books">
+
+                    <img src="../assets/bookImg/r5.jpg" alt="">
+                    
+                    <h3>At The Quiet Edge</h3>
+                    <p>Victoria Helem</p>
+                    <button>Mystery</button>
+                </div>
+             
+             </div>
+             <!--This class is for the right scroll bar wit the authers-->
+             <div class="scrollbar2">
+
+                <h1>Famous Authors</h1>
+             
+                <div class="actors">
+                    <img src="../assets/bookImg/author1.jpg" alt="">
+                    <h2>J.K Rowling</h2>
+                    <p>10 Books</p>
+
+                </div>
+                <br>
+                <div class="actors">
+                    <img src="../assets/bookImg/aut2.jpg" alt="">
+                    <h2>Stephen king</h2>
+                    <p>61 Novels</p>
+                  </div>
+                  <br>
+                <div class="actors">
+                    <img src="../assets/bookImg/aut3.jpg" alt="">
+                    <h2>Daniele Steel</h2>
+                    <p>179 Books</p>
+                </div>
+
+             </div>
+              
+            </div>
+           
+        </main>
+       
+    
 </body>
 </html>

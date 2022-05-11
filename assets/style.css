@@ -1,0 +1,397 @@
+*{
+
+    list-style: none;
+    text-decoration: none;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'open sans',sans-serif;
+}
+ body{
+        background:#F6F5F3;
+      
+ }
+ .wrapper .sidebar{
+
+         background-color: #FAF8F4;
+        position:fixed;
+        top:0;
+        left:0;
+        width:250px;
+        height:100%;
+        padding:20px 0px;
+
+
+ }
+ .wrapper .sidebar .imagecontainer{
+
+    background-color: #DFD7C7;
+
+    width: 250px;
+    height:300px;
+    position:fixed;
+    top: 50px;;
+    left:0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding:10px 0px;
+      
+ }
+ .wrapper .sidebar .imagecontainer .profile{
+
+         margin-bottom: 50px;
+         margin-top: 30px;
+         text-align: center;
+        
+ }
+
+ .wrapper .sidebar  .imagecontainer .profile  img{
+
+      display:block;
+      width: 100px;
+      height:100px;
+      border-radius: 20%;
+      margin: auto;
+      
+    }
+
+ .wrapper .sidebar   .profile  h2{
+      
+       margin:10px;
+       font-size: 22px;
+  
+  
+  }
+.wrapper .sidebar  .profile  p{
+      
+       margin-top: 30px;
+      font-size: 16px;
+  }
+  .wrapper .sidebar ul li a{
+   
+     display:block ;
+     
+     margin-top: 40px;
+     color:blue;
+     font-size: 20px;
+   
+    margin-left: 55px;
+
+  }
+  .wrapper .sidebar ul li a .icon img{
+    
+    
+    display:block;
+    width: 26spx;
+    height:32px;
+    border-radius: 20%;
+   
+  }
+
+ 
+  .wrapper .sidebar ul li a .icon{
+      
+    color: #000;
+    display: inline-block;
+   
+}
+.wrapper .sidebar ul li a .item{
+      
+    color: #000;
+    position: absolute;
+    margin-left: 5px;
+    display: inline-block;
+    
+}
+ .wrapper .sidebar .product h2{
+
+    font-size: 20px;
+    margin-top: 145px;
+    margin-left: 65px;
+    align-items: center;
+    display: flex;
+    position: absolute;
+ 
+  
+ }
+ .wrapper .sidebar .product img{
+
+   
+    margin-top: 100px;
+    margin-trim: 6px;
+ }
+
+ 
+   
+
+ .content{
+
+    width:100%;
+    height: 100px;
+    position:fixed;
+    padding:10px;
+    margin-left: 250px;
+    position:fixed;
+    background-color: aqua;
+}
+
+header{
+  width:95%;
+    height: 100px;
+    
+    margin-left: 295px;
+    background-color: #FAF8F4;;
+    position: fixed;
+    float: left;
+}
+header .navContent .label1{
+  
+ 
+  float: left;
+ 
+  margin-right: 600px;
+   font-size: 35px;
+   color: #000000;
+   font-style: bold;
+   font-weight: bold;
+
+}
+
+
+header .navContent .label1 h1{
+
+  float: right;
+  margin-top: 2px;
+  margin-right: 10px;
+  font-size: 35px;
+  color: red;
+  
+  font-weight: bold;
+  border-radius: 100%;
+
+}
+
+header .navContent{
+      
+        
+        margin-right: 60px;
+        margin-top: 60px;
+    }
+    .navContent a{
+        text-decoration: none;
+        margin: 20px;
+        color: #000000;
+        
+    }
+    .navContent input[type=search]{
+        margin: -34px;
+        padding: 20px;
+        width:300px;
+    }
+    .navContent input{
+        border-radius: 25px;
+        margin: 10px;
+        height: 30px;
+        width: 200px;
+    }
+
+.scrollbar{
+   
+  
+  width: 82.5%;
+  height: 350px;
+  background-color: #FAF8F4;
+  float: left;
+  margin-top: 150px;
+  margin-bottom: 300px;
+  margin-left: 295px;
+  
+ 
+
+}
+.scrollbar .scrollbarwrapper{
+  
+  display: flex;
+  overflow-y: hidden;
+  height: 298px;
+  background-color: #FAF8F4;
+
+
+ width: 100%;
+ 
+
+}
+.scrollbarwrapper .scrollitem{
+  
+  margin-top: 100px;
+  width: 850px;
+  height: 100px;
+  margin-right: 50px;
+  margin-left: 100px;
+  border-radius: 20%;
+}
+.scrollitem img
+{ 
+  width: 100px;
+  height: 200px;
+  margin-left: 20px;
+  margin-top: -50px;
+  border-radius: 25%;
+}
+
+.scrollitem .iteminfo{
+  width: 450px;
+  height: 170px;
+  border-radius: 10%;
+  margin-top: -20px;
+  
+  
+}
+.scrollitem #book1{
+  background: #3D879C;
+}
+.scrollitem #book2{
+  background: #A47253;
+}
+.scrollitem #book3{
+  background: #AA2C0C;
+}
+.scrollitem #book4{
+  background: #2799C9;
+}
+.scrollitem #book5{
+  background: #A5BA56;
+}
+.scrollitem #book6{
+  background: #6E7679;
+}
+.scrollitem .iteminfo h1{
+  margin-top: -100px;
+  margin-left: 200px;
+}
+.scrollitem .iteminfo p{
+  margin-top: 5px;
+  margin-left: 200px;
+}
+
+.scrollbar h1{
+  margin-top: 20px;
+  font-size: 30px;
+  margin-top: 20px;
+  margin-left: 20px;
+
+}
+
+.scrollbar1{
+   
+  margin-top: -280px;
+  width: 65%;
+  height: 390px;
+  background-color: #FAF8F4;
+  float: left;
+  margin-left: 290px;
+  display:flex;
+
+  
+
+}
+.scrollbar1 .books{
+
+  margin-top: 50px;
+}
+.scrollbar1 h1{
+
+  font-size: 100px;
+  position:fixed;
+}
+.scrollbar1 .books img { 
+ 
+  width:150px;
+  height: 200px;
+  margin-top: 30px;
+  margin-left: 50px;
+  border-radius: 20%;
+
+}
+.scrollbar1 .books h3 {
+    margin-left: 50px;
+    margin-top: 10px;
+}
+.scrollbar1 .books p{
+  margin-left: 50px;
+  margin-top: 10px;
+}
+.scrollbar1 .books button{
+  margin-left: 50px;
+  margin-top: 10px;
+  width: 100px;
+  border-radius: 120px;
+  
+}
+.scrollbar1 h1{
+
+  font-size: 40px;
+  margin-left: 20px;
+}
+.scrollbar2{
+   
+  margin-top: -390px;
+  width: 17%;
+  height: 400px;
+  background-color: #ECECEC;
+  float: right;
+  margin-left: 390px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  
+
+}
+.scrollbar2 h1{
+
+  font-size: 22px;
+  text-align: center;
+  margin-top: 50px;
+  margin-right: 20px;
+
+}
+.scrollbar2 img{
+
+  width :60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-left: 50px;
+  margin-top: 35px;
+  
+}
+.scrollbar2 h2{
+  margin-top: -60px;
+  text-align: right;
+  font-size: 18px;
+  margin-right: 50px;
+}
+.scrollbar2 p{
+   
+  text-align: right;
+  margin-right: 80px;
+  
+  font-size: 18px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+
+::-webkit-scrollbar-thumb {
+  background: rgb(94, 87, 87); 
+  border-radius: 10px;
+}
+
+  */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}
