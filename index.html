@@ -9,14 +9,14 @@
     <link rel = "icon" href = "./assets/download.jfif" type = "image/x-icon"> 
 </head>
 <body>
-    <form action="./assets/home.html" >
+    <form action="./assets/home.html" method="POST" >
         <div class="container">
             <h1>Sign In</h1>
-            <label for="email"></label>
-            <input type="email" id="email" name="email" placeholder="E-mail" required>
+            <label for="name"></label>
+            <input type="text" id="name" name="name" placeholder="Username" required>
             <br>
             <input type="password" id="pwd" name="pwd" placeholder="Password" required >
-            <button id="signupButton" >Sign In</button>
+            <button id="signupButton" onclick="handleSubmit()" >Sign In</button>
             <br>
             <span class="forgotpwd">
                 <a href="../assets/forgotpwd.html">Forgot password?</a>
