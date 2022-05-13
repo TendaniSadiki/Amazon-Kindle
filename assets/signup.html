@@ -9,10 +9,10 @@
     <link rel = "icon" href = "./download.jfif" type = "image/x-icon"> 
 </head>
 <body>
-    <form action="./home.html" method="POST">
+    <form action="./home.html">
         <div class="container">
             <h1>Sign Up</h1>
-            <input type="text" id="nameUser" name="name" placeholder="Name" value="">
+            <input type="text" id="nameUser" name="names" placeholder="Name" value="">
             <br>
             <input type="text" id="sUser" name="surname" placeholder="Surname">
             <br>
@@ -26,7 +26,7 @@
                 <input type="file" id="img" name="img"  accept="image/*">
                  </span>
             <input type="password" id="pwd" name="pwd" placeholder="Password" >
-            <button id="signupButton" onclick="signUp();" >Sign Up</button>
+            <button id="signupButton" onclick="validateForm()" >Sign Up</button>
             <br>
             <span class="signinLink">
                 <i>Already have an account?</i>
