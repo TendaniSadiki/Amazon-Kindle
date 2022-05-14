@@ -1,0 +1,218 @@
+body{
+
+margin: 0;
+height: auto;
+background: #F6F5F3;
+width: 100%;
+color: black;  
+  
+ }
+ body{
+     min-height: 100%;
+ }
+ .kindleContent{
+     height: 100%;
+     min-height: 100%;
+ }
+* {
+  box-sizing: border-box;
+}
+.navDiv{
+  width: 80%;
+  margin-left: 20%;
+  padding:15px
+}
+.menu {
+  float: left;
+  width: 20%;
+  height: 100%;
+  min-height: 100%;
+  
+}
+
+.menu a {
+  background-color: #e5e5e5;
+  padding: 8px;
+  margin-top: 7px;
+  display: block;
+  width: 100%;
+  color: black;
+}
+.profileContent{
+  
+  background-color: #dfd7ce;
+  width: 80%;
+  margin-top: 20px;
+  text-align: center;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.profileContent img{
+  border-radius: 15px;
+  margin-top: 30px;
+  width: 80px;
+  height: 50px;
+  text-align: center;
+}
+.username{
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: -10px;
+  
+}
+.sidebarItem{
+  margin-top: 100px;
+}
+.amazonProduct{
+  background: pink;
+  width: 20%;
+}
+.main {
+  float: left;
+  width: 80%;
+  padding: 0 20px;
+}
+
+.readlastTime{
+  width: 100%;
+  overflow-x: hidden;
+  
+}
+.readlastTime h1{
+  
+  
+}
+.readlastTime ul{
+  overflow-x: scroll;
+  display: inline-flex;
+  width: 100%;
+  scroll-snap-align: start;
+  max-height: 100%;
+  overflow-y: hidden;
+}
+.readlastTime ul li div img{
+  border-radius: 15px;
+  margin-left: 20px;
+  margin-top: -10px;
+  
+}
+.readlastTime ul li h1{
+  font-size: 1rem;
+  margin-top: -160px;
+  margin-left: 200px;
+  padding: 2px;
+}
+.readlastTime ul li{
+  list-style: none;
+  padding: 10px;
+  height: auto;
+  
+}
+
+.readlastTime ul li p{
+  margin-top: 5px;
+  margin-left: 200px;
+}
+.readlastTime ul li div{
+  
+ 
+  height:10rem;
+  width: 25rem;
+  border-radius: 40px;
+  left: 8rem;
+  
+  
+  
+}
+.book1{
+  background-image: linear-gradient(to bottom right, #4C90A7, #FFFFFF);
+}
+.book2{
+  background-image: linear-gradient(to bottom right, #895F47, #EC95AB);
+}
+.book3{
+  background-image: linear-gradient(to bottom right, #221E5B, #ff7300);
+}
+.book4{
+  background-image: linear-gradient(to bottom right, #327DBE, #79cf33);
+}
+.book5{
+  background-image: linear-gradient(to bottom right, #3F6FE9, #FFFFFF);
+}
+.book6{
+  background-image: linear-gradient(to bottom right, #2B3D60, #FFFFFF);
+}
+.fa-arrow-left{
+        
+  margin: 186px;
+  margin-left: 10px;
+}
+.fa-arrow-right{
+  
+  margin: 186px;
+  right: -100px;
+  
+}
+.fa-arrow-left,.fa-arrow-right{
+  cursor: pointer;
+  position: fixed;
+}
+.right {
+  background-color: #e5e5e5;
+  float: right;
+  width: 20%;
+  padding: 15px;
+  margin-top: -200px;
+  text-align: center;
+ 
+}
+.newRelease{
+ 
+}
+.newRelease h1{
+ 
+  
+  
+  
+}
+.newRelease ul{
+  display: inline-flex;
+  margin-left: -50px;
+         
+}
+.newRelease ul li{
+  
+  list-style: none;
+  border-radius: 20px; ;
+  cursor: pointer;
+  
+ 
+}
+.newRelease ul li button{
+  border-radius: 15px;
+}
+.newRelease ul li div img{
+  border-radius: 15px;
+
+}
+.newRelease ul li a{
+  text-decoration: none;
+}
+.newRelease ul li h4{
+  padding-left: 4px;
+}
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  body{
+    overflow: auto;
+  }
+  .menu, .main, .right, .navDiv {
+    width: 100%;
+    margin: 0;
+  }
+  .readlastTime ul{
+    display: block;
+  }
+ 
+  
+}
