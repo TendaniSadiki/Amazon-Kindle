@@ -17,11 +17,7 @@ color: black;
 * {
   box-sizing: border-box;
 }
-.navDiv{
-  width: 80%;
-  margin-left: 20%;
-  padding:15px
-}
+
 .menu {
   float: left;
   width: 20%;
@@ -31,7 +27,6 @@ color: black;
 }
 
 .menu a {
-  background-color: #e5e5e5;
   padding: 8px;
   margin-top: 7px;
   display: block;
@@ -40,7 +35,7 @@ color: black;
 }
 .profileContent{
   
-  background-color: #dfd7ce;
+  background-image: linear-gradient(#ECEAE8,#DDD0BB);
   width: 80%;
   margin-top: 20px;
   text-align: center;
@@ -53,6 +48,7 @@ color: black;
   width: 80px;
   height: 50px;
   text-align: center;
+  
 }
 .username{
   font-size: 2rem;
@@ -63,9 +59,9 @@ color: black;
 .sidebarItem{
   margin-top: 100px;
 }
-.amazonProduct{
-  background: pink;
-  width: 20%;
+
+.productContent img{
+  margin-left: 80px;
 }
 .main {
   float: left;
@@ -78,10 +74,7 @@ color: black;
   overflow-x: hidden;
   
 }
-.readlastTime h1{
-  
-  
-}
+
 .readlastTime ul{
   overflow-x: scroll;
   display: inline-flex;
@@ -89,6 +82,7 @@ color: black;
   scroll-snap-align: start;
   max-height: 100%;
   overflow-y: hidden;
+  
 }
 .readlastTime ul li div img{
   border-radius: 15px;
@@ -114,15 +108,41 @@ color: black;
   margin-left: 200px;
 }
 .readlastTime ul li div{
-  
- 
   height:10rem;
   width: 25rem;
   border-radius: 40px;
   left: 8rem;
   
+}
+.navContent{
+  float: right;
+  margin-top: -35px;
+}
+.navContent a{
+  text-decoration: none;
+  margin: 20px;
+  color: #000000;
   
-  
+
+}
+.navContent input[type=search]{
+  margin: -34px;
+  padding: 18px;
+}
+.navContent input{
+  border-radius: 25px;
+  margin: 10px;
+  height: 30px;
+  width: 200px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  display: none;
+}
+.logo{
+  width: 140px;
+  height: 60px;
 }
 .book1{
   background-image: linear-gradient(to bottom right, #4C90A7, #FFFFFF);
@@ -143,38 +163,27 @@ color: black;
   background-image: linear-gradient(to bottom right, #2B3D60, #FFFFFF);
 }
 .fa-arrow-left{
-        
-  margin: 186px;
-  margin-left: 10px;
+   
+  margin: 86px;
+  margin-left: -70px;
 }
 .fa-arrow-right{
-  
-  margin: 186px;
-  right: -100px;
+  margin-left: 700px;
+  margin-top: 72px;
+  float: right;
+  right: 0;
   
 }
 .fa-arrow-left,.fa-arrow-right{
   cursor: pointer;
   position: fixed;
 }
-.right {
-  background-color: #e5e5e5;
-  float: right;
-  width: 20%;
-  padding: 15px;
-  margin-top: -200px;
-  text-align: center;
- 
-}
+
 .newRelease{
- 
+ width: 80%;
+ float: left;
 }
-.newRelease h1{
- 
-  
-  
-  
-}
+
 .newRelease ul{
   display: inline-flex;
   margin-left: -50px;
@@ -201,18 +210,129 @@ color: black;
 .newRelease ul li h4{
   padding-left: 4px;
 }
+
+.right {
+  background-color: #e5e5e5;
+  float: right;
+  width: 20%;
+  margin-top: -330px;
+  text-align: center;
+ 
+}
+.right h1{
+  font-size: 1rem;  
+}
+.authorImg{
+  margin-top: -8px;
+  width:40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.right ul li{
+  list-style: none;
+  cursor: pointer;
+  
+  
+}
+.right ul li h3{
+  font-size: 1rem;
+  margin-top: -6px;
+}
+.sidebarItem{
+  margin-top: 18px;
+  margin-left: -20px;
+}
+.sidebarItem a{
+  text-decoration: none;
+
+}
+.sidebarItem ul li{
+  list-style: none;
+}
+.kIcon{
+  border-radius: 15px;
+  width: 16px;
+  height: 16px;
+}
+.collectionIcon{
+  width: 16px;
+  height: 16px;
+  
+}
+.savedIcon{
+  width: 12px;
+  height: 12px;
+}
+.fa-user, .fa-sign-out-alt{
+  font-size: 1rem;
+  text-decoration: none;
+}
 @media only screen and (max-width: 620px) {
   /* For mobile phones: */
   body{
     overflow: auto;
+    overflow-x: hidden;
   }
-  .menu, .main, .right, .navDiv {
+  .menu, .main, .right, .topnav,.newRelease, .profileContent,.readlastTime {
     width: 100%;
     margin: 0;
+  }
+  .kindleContent{
+    margin-top: 120px;
   }
   .readlastTime ul{
     display: block;
   }
- 
+  
+  .fa-bars{
+   color: black; 
+  }
+  .fa-arrow-left,.fa-arrow-right{
+    display: none;
+  }
+  .newRelease{
+    width: 100%;
+  }
+  .newRelease ul{
+    
+    display: block;
+    text-align: center;
+    
+  }
+  .topnav{
+    
+      position: fixed;
+      width: 100%;
+      background: #F6F5F3;
+      top: 0;
+      left: 0;
+      font-family: 'Exo 2', sans-serif;
+      padding: 1em;
+      height: 200px;
+    }
+    .navLeft img{
+      margin-top: 80px;
+    }
+    .navContent input{
+      border-radius: 25px;
+      margin-top: -100px;
+     
+     
+    }
+    .searchbar{
+      margin-left: 50px;
+      
+    }
+    .profileContent{
+      margin-top: 70px;
+      border: none;
+      
+    }
+    .right ul li {
+      display: inline-flex;
+    }
+    
   
 }
+
+  /* For mobile phones: */

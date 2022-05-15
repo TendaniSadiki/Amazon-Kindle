@@ -1,10 +1,10 @@
 
-var button = document.getElementById('btn-scroll-right');
+var button = document.getElementById('scrollRight');
 button.onclick = function () {
     var container = document.getElementById('scrollbar');
     sideScroll(container,'right',25,100,10);
 };
-var back = document.getElementById('btn-scroll-left');
+var back = document.getElementById('scrollLeft');
 back.onclick = function () {
     var container = document.getElementById('scrollbar');
     sideScroll(container,'left',25,100,10);

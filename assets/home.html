@@ -11,38 +11,42 @@
   <div style="overflow:auto">
     <div class="menu">
       <div class="profileContent">
-        <img src="./assets/bookImg/profile.jpg" alt="profile picture" width="150px" width="150px">
+        <img src="../assets/bookImg/profile.jpg" alt="profile picture" width="150px" width="150px">
            <h3>Welcome <br>Back</h3>
            <p class="username" id="userName">Edmond</p>
            <br>
        </div>
        <div class="sidebarItem">
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
-      <a href="#">Link 4</a>
+        <div class="sidebarWrapper">
+          <ul>
+          <li class="sidebarContent"><span> <a><img src="./bookImg/k.png" class="kIcon" > My <br> Kindle Board</a></span> </li>
+          <li class="sidebarContent"><span> <a><img src="../assets/bookImg/update.png" class="collectionIcon" >Collections</a></span></li>
+          <li class="sidebarContent"><span> <a><img class="savedIcon" src="../assets/bookImg/bookmark-ribbon_icon-icons.com_72842.ico" >Saved </a></span></li>
+          <li class="sidebarContent"><span> <a><i class="fas fa-user"></i> Profile</a></span></li>
+          <li class="sidebarContent"><span> <a href="../index.html"><i class="fas fa-sign-out-alt"></i> Logout </a></span></li>
+          </ul>
+          <div class="productContent">
+         <img src="../assets/product.png" width="100px" height="100px" >
+            </div>  
+      </div>
        </div>
-       <div class="amazonProduct">
-         <h1>Logo</h1>
-       </div>
+      
     </div>
     <header>
       <div class="topnav" id="headerTable">
-          <div>
-              <img class="logo" src="../assets/Kindel.png" alt="Kindle logo">
+          <div class="navLeft">
+            <img src="../assets/Kindle.png" height="60px">
           </div>
           <div class="navContent">
               <nav>
-                  <a href="#">
+                  <a href="#" class="searchbar">
                      <input type="search" placeholder="Search your books">
                      <i class="fas fa-search"></i>
                   </a>
                   <a href="#">New release</a>
                   <a href="#">Futured</a>
                   <a href="#">Icon</a>
-                  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                      <i class="fas fa-bars"></i>
-                    </a>
+                 
               </nav>
           </div>
       </div>
@@ -52,8 +56,12 @@
   <div class="main">
     <div class="readlastTime">
       <h1>Books you read last</h1>
-      <ul class="scrollContainer">
-             <span><i class="fas fa-arrow-left" onclick="left()" id="scrollLeft"></i></span>
+      <ul class="scrollContainer"   id="scrollbar">
+        <div id="horizontalScroll">
+            <span><i class="fas fa-arrow-left" onclick="left()" id="scrollLeft"></i></span>
+            <span><i class="fas fa-arrow-right" onclick="right()" id="scrollRight" ></i></span>
+            
+         </div>
              <li><div class="book1"><img src="../assets/bookImg/book1.jpg" height="180px"; width="120px" >
               <h1>The Silent Wife
               </h1>
@@ -114,13 +122,36 @@
   </div>
 
   <div class="right">
-    <h2>About</h2>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-  </div>
+    <h1>Famous Authors</h1>
+    <ul>
+        <li>
+            <img src="../assets/bookImg/author1.jpg" class="authorImg" >
+            <div class="authorinfo">
+                <h3>P Macdonald</h3>
+                <p>54 Books</p>
+            </div>
+        </li>
+        <li>
+            <img src="../assets/bookImg/aut2.jpg" class="authorImg" >
+            <div class="authorinfo">
+                <h3>W Parker</h3>
+                <p>12 Books</p>
+            </div>
+        </li>
+        <li>
+            <img src="../assets/bookImg/aut3.jpg" class="authorImg" >
+            <div class="authorinfo">
+                <h3>A Winter</h3>
+                <p>33    Books</p>
+            </div>
+        </li>
+    </ul>
+</div>
 </div>
 </div>
 
-
+<script src="../js/index.js"></script>
 </body>
 </html>
+
 
