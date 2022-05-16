@@ -1,3 +1,0 @@
-function signin(){
-    alert("signin")
-}

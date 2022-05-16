@@ -5,32 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign In</title>
-    <link rel="stylesheet" href="./css/signin.css">
+    <link rel="stylesheet" href="./css/validation.css">
     <link rel = "icon" href = "./assets/download.jfif" type = "image/x-icon"> 
 </head>
 <body>
-    <form action="./assets/home.html" >
-        <div class="container">
-            <h1>Sign In</h1>
-            <label for="email"></label>
-            <input type="email" id="email" name="email" placeholder="E-mail" required>
-            <br>
-            <input type="password" id="pwd" name="pwd" placeholder="Password" required >
-            <button id="signupButton" onclick='signin()' >Sign In</button>
-            <br>
-            <span class="forgotpwd">
-                <a href="../assets/forgotpwd.html">Forgot password?</a>
-            </span>
-            <br>
-            <br>
-            <br>
-            <br>
-            <span class="signinLink">
-                <i>Don't have an account?</i>
-                <a href="./assets/signup.html">click here</a>
-            </span>
-        </div>
-    </form>
-    <script src="./js/signin.js"></script>
+    <div class="login">
+        <form name='form-login'>
+    
+            <h1>SIGN IN</h1>
+    
+            <label for="userName">Email</label>
+            <input type="email" id="userName" placeholder="Email" required>
+    
+            <label for="userPw">Password</label>
+            <input type="password" id= "userPw" placeholder="Password" required>
+    
+            <div id="remember">
+                <input type="checkbox" value="lsRememberMe" id="rememberMe"
+                       style="display: inline-block;">
+                <label>Remember me</label>
+            </div>
+    
+            <input id= "login_btn" type="submit" value="Login" onclick="check()">
+    
+        </form>
+    </div>
+    
+    <script src="./js/validation.js"></script>
 </body>
 </html>

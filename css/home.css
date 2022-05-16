@@ -218,6 +218,8 @@ overflow-y: hidden;
   width: 15%;
   margin-top: -330px;
   text-align: center;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
  
 }
 .right h1{
@@ -300,6 +302,7 @@ overflow-y: hidden;
     text-align: center;
     
   }
+
   .topnav{
     
       position: fixed;
@@ -321,9 +324,7 @@ overflow-y: hidden;
      
      
     }
-    #pcLogo{
-      display: none;
-    }
+    
     .navContent a{
       margin-top: 30px;
       display: inline-flex;
@@ -348,10 +349,6 @@ overflow-y: hidden;
     
   
 }
-@media only screen and (min-width: 620px) {
-  #mobileLogo{
-    display: none;
-  }
-}
+
 
   /* For mobile phones: */

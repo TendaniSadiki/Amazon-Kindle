@@ -3,7 +3,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="../css/home.css" >
+<link rel="stylesheet" href="./css/home.css" >
 <script src="https://kit.fontawesome.com/c46e19eb27.js" crossorigin="anonymous"></script>
 </head>
 <body >
@@ -11,22 +11,27 @@
   <div style="overflow:auto">
     <div class="menu">
       <div class="profileContent">
-        <img src="../assets/bookImg/profile.jpg" alt="profile picture" width="150px" width="150px">
+        <img src="./assets/bookImg/profile.jpg" alt="profile picture" width="150px" width="150px">
            <h3>Welcome <br>Back</h3>
-           <p class="username" id="userName">Edmond</p>
+           <p class="username" id="userName"></p>
+           <script>
+            var namell=localStorage.getItem('name');
+            const sname=[namell];
+            document.getElementById('userName').innerHTML=[0];
+                   </script>
            <br>
        </div>
        <div class="sidebarItem">
         <div class="sidebarWrapper">
           <ul>
-          <li class="sidebarContent"><span> <a><img src="./bookImg/k.png" class="kIcon" > My <br> Kindle Board</a></span> </li>
-          <li class="sidebarContent"><span> <a><img src="../assets/bookImg/update.png" class="collectionIcon" >Collections</a></span></li>
-          <li class="sidebarContent"><span> <a><img class="savedIcon" src="../assets/bookImg/bookmark-ribbon_icon-icons.com_72842.ico" >Saved </a></span></li>
+          <li class="sidebarContent"><span> <a><img src="./assets/bookImg/k.png" class="kIcon" > My <br> Kindle Board</a></span> </li>
+          <li class="sidebarContent"><span> <a><img src="./assets/bookImg/update.png" class="collectionIcon" >Collections</a></span></li>
+          <li class="sidebarContent"><span> <a><img class="savedIcon" src="./assets/bookImg/bookmark-ribbon_icon-icons.com_72842.ico" >Saved </a></span></li>
           <li class="sidebarContent"><span> <a><i class="fas fa-user"></i> Profile</a></span></li>
-          <li class="sidebarContent"><span> <a href="../index.html"><i class="fas fa-sign-out-alt"></i> Logout </a></span></li>
+          <li class="sidebarContent"><span> <a href="./index.html"><i class="fas fa-sign-out-alt"></i> Logout </a></span></li>
           </ul>
           <div class="productContent">
-         <img src="../assets/product.png" width="100px" height="100px" >
+         <img src="./assets/product.png" width="100px" height="100px" >
             </div>  
       </div>
        </div>
@@ -35,7 +40,7 @@
     <header>
       <div class="topnav" id="headerTable">
           <div class="navLeft" >
-            <img src="../assets/Kindle.png"  height="60px">
+            <img src="./assets/Kindle.png"  height="60px">
           </div>
           <div class="navContent">
               <nav>
@@ -62,28 +67,28 @@
             <span><i class="fas fa-arrow-right" onclick="right()" id="scrollRight" ></i></span>
             
          </div>
-             <li><div class="book1"><img src="../assets/bookImg/book1.jpg" height="180px"; width="120px" >
+             <li><div class="book1"><img src="./assets/bookImg/book1.jpg" height="180px"; width="120px" >
               <h1>The Silent Wife
               </h1>
               <p>number of pages</p>
           </div></li>
-           <li><div class="book2" ><img src="../assets/bookImg/book2.jpg" height="180px"; width="120px" >
+           <li><div class="book2" ><img src="./assets/bookImg/book2.jpg" height="180px"; width="120px" >
               <h1>Wildcat</h1>
               <p>number of pages</p>
           </div></li>
-           <li><div class="book3"><img src="../assets/bookImg/book3.jpg" height="180px"; width="120px" >
+           <li><div class="book3"><img src="./assets/bookImg/book3.jpg" height="180px"; width="120px" >
               <h1>Dark Purpose</h1>
               <p>number of pages</p>
           </div></li>
-           <li><div class="book4"><img src="../assets/bookImg/book4.jpg" height="180px"; width="120px" >
+           <li><div class="book4"><img src="./assets/bookImg/book4.jpg" height="180px"; width="120px" >
               <h1>Write My Name Across The Sky</h1>
               <p>number of pages</p>
           </div></li>
-           <li><div class="book5"><img src="../assets/bookImg/book5.jpg" height="180px"; width="120px" >
+           <li><div class="book5"><img src="./assets/bookImg/book5.jpg" height="180px"; width="120px" >
               <h1>He Who Fights The Monster</h1>
               <p>number of pages</p>
           </div></li>
-           <li><div class="book6"><img src="../assets/bookImg/book6.jpg" height="180px"; width="120px" >
+           <li><div class="book6"><img src="./assets/bookImg/book6.jpg" height="180px"; width="120px" >
               <h1>The Watch Maker</h1>
               <p>number of pages</p>
           </div></li>    
@@ -92,27 +97,27 @@
   <div class="newRelease">
     <h1>New release</h1>
     <ul class="newReleaseScroll">
-        <li><div><img src="../assets/bookImg/r1.jpg" height="80px"; width="80px" >
+        <li><div><img src="./assets/bookImg/r1.jpg" height="80px"; width="80px" >
             <h4>The Insider</h4>
             <p>Matthew Richard</p>
             <button>Action</button>
         </div></li>
-        <li><div><img src="../assets/bookImg/r2.jpg" height="80px"; width="80px" >
+        <li><div><img src="./assets/bookImg/r2.jpg" height="80px"; width="80px" >
             <h4>Deadly Little Lies</h4>
             <p>Stephanie Decarolis</p>
             <button>Slice life</button>
             <div></li>
-        <li><div><img src="../assets/bookImg/r3.jpg" height="80px"; width="80px" >
+        <li><div><img src="./assets/bookImg/r3.jpg" height="80px"; width="80px" >
             <h4>If We disapper here</h4>
             <p>M Hayes</p>
             <button>Comedy</button>
         </div></li>
-        <li><div><img src="../assets/bookImg/r4.jpg" height="80px"; width="80px" >
+        <li><div><img src="./assets/bookImg/r4.jpg" height="80px"; width="80px" >
             <h4>Starngers we know</h4>
             <p>Elle Marr</p>
             <button>Romance</button>
         </div></li>
-        <li><div><img src="../assets/bookImg/r5.jpg" height="80px"; width="80px" >
+        <li><div><img src="./assets/bookImg/r5.jpg" height="80px"; width="80px" >
             <h4>At the quite edge</h4>
             <p>Victoria  Helen</p>
             <button>Horror</button>
@@ -125,21 +130,21 @@
     <h1>Famous Authors</h1>
     <ul>
         <li>
-            <img src="../assets/bookImg/author1.jpg" class="authorImg" >
+            <img src="./assets/bookImg/author1.jpg" class="authorImg" >
             <div class="authorinfo">
                 <h3>P Macdonald</h3>
                 <p>54 Books</p>
             </div>
         </li>
         <li>
-            <img src="../assets/bookImg/aut2.jpg" class="authorImg" >
+            <img src="./assets/bookImg/aut2.jpg" class="authorImg" >
             <div class="authorinfo">
                 <h3>W Parker</h3>
                 <p>12 Books</p>
             </div>
         </li>
         <li>
-            <img src="../assets/bookImg/aut3.jpg" class="authorImg" >
+            <img src="./assets/bookImg/aut3.jpg" class="authorImg" >
             <div class="authorinfo">
                 <h3>A Winter</h3>
                 <p>33    Books</p>
@@ -150,7 +155,7 @@
 </div>
 </div>
 
-<script src="../js/index.js"></script>
+<script src="./js/index.js"></script>
 </body>
 </html>
 
