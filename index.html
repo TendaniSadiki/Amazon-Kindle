@@ -9,29 +9,19 @@
     <link rel = "icon" href = "./assets/download.jfif" type = "image/x-icon"> 
 </head>
 <body>
-    <div class="login">
-        <form name='form-login'>
-    
+    <div class="login" >
+        <form name='form-login' action="./home.html">
             <h1>SIGN IN</h1>
-    
             <label for="userName">Email</label>
             <input type="email" id="email" placeholder="Email" required>
-    
             <label for="userPw">Password</label>
             <input type="password" id= "pwd" placeholder="Password" required>
-    
-            <div id="remember">
-                <input type="checkbox" value="lsRememberMe" id="rememberMe"
-                       style="display: inline-block;">
-                <label>Remember me</label>
-            </div>
-    
             <input id= "login_btn" type="submit" value="Login" onclick="signin()">
-    
+            <a style="color: #F6F5F3;" href="./signup.html">Create account</a>
         </form>
     </div>
     
    
 </body>
-<script src="./js/validation.js"></script>
+<script src="validation.js"></script>
 </html>

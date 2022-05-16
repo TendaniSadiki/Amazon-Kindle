@@ -22,21 +22,18 @@
             <input type="email" id="email" placeholder="Email" required>
             <label for="phoneNumber"></label>
             <input type="tel" id="phoneNumber" placeholder="Contact number" required>
+            <label for="email">Select image</label>
+            <input type="file"  accept="image/*" id="image" required>
             <label for="pw">Password</label>
             <input type="password"
                    id= "pwd"
                    placeholder="Password" required>
     
-            <ul class="helper-text">
-                <li class="length">Must be at least 8 characters long.</li>
-                <li class="lowercase">Must contain a lowercase letter.</li>
-                <li class="uppercase">Must contain an uppercase letter.</li>
-                <li class="special">Must contain a number or special character.</li>
-            </ul>
             <input id="rgstr_btn" type="submit" value="Register" onclick="signup()">
+            <a href="./index.html" style="color: #F6F5F3;" >Sign in here</a>
     
         </form>
     </div>
-    <script src="../js/validation.js" ></script>
+    <script src="validation.js" ></script>
 </body>
 </html>

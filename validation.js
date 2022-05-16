@@ -5,7 +5,7 @@ var surname = document.getElementById('surname');
 var mail = document.getElementById('email');
 var phoneNumber = document.getElementById('phoneNumber');
 var Password = document.getElementById('pwd');
-var imagess = document.getElementById('imagess');
+var imagess = document.getElementById('image');
     sessionStorage.setItem('name', names.value);
     sessionStorage.setItem('surname',surname.value);
     sessionStorage.setItem('mail',mail.value);
@@ -15,7 +15,7 @@ var imagess = document.getElementById('imagess');
     alert('Your account has been created');
     window.open("index.html");
 }
-//document.getElementById('loginResult').innerHTML=localStorage.getItem('name');
+
 function signin(){
     var logmail=sessionStorage.getItem('mail');
     var lopw=sessionStorage.getItem('Password');
@@ -30,6 +30,6 @@ this.location.href = location;
       alert("Wrong Password");
     }else{
         alert("Welcome " +sessionStorage.getItem('name'));
-        window.open("home.html");
+window.open("home.html");
     }
 }

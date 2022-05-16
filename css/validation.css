@@ -47,7 +47,7 @@ after { clear: both; }
   height: 50px;
 }
 
-.login form input[type="email"],input[type="text"], input[type="tel"] {
+.login form input[type="email"],input[type="text"], input[type="tel"], input[type="file"] {
   background-color: #3b4148;
   border-radius: 0px 3px 3px 0px;
   color: #a9a9a9;
