@@ -8,7 +8,6 @@
 body {
   background: white;
   color: white;
-  font: 87.5%/1.5em 'Open Sans', sans-serif;
   margin: 0;
 }
 
@@ -21,6 +20,7 @@ after { clear: both; }
 .login {
   margin: 50px auto;
   width: 320px;
+  margin-top: 150px;
 }
 
 .login form {
@@ -31,6 +31,7 @@ after { clear: both; }
   background: #282e33;
   border-top: 3px solid #434a52;
   border-bottom: 3px solid #434a52;
+  margin-top: 100px;
 }
 
 .login form span {
@@ -78,4 +79,11 @@ after { clear: both; }
 }
 #login form input[type="submit"]:hover {
   background: #16aa56;
+}
+@media only screen and (max-width: 620px) {
+  .login form {
+  border: 5px solid #FFFF00;
+  text-align: center;
+  margin-top: 500px;
+  }
 }
