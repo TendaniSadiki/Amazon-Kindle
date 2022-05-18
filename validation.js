@@ -61,9 +61,27 @@ function signin(){
     var maibox=document.getElementById('email').value;
     var passbox=document.getElementById('pwd').value;
     var location = '';
-    if(userName.value == storedName && userPw.value == storedPw){
-        alert('You are logged in.');
-    }else{
-        alert('Error on login');
+    var location = '';
+    if(maibox == '' && passbox == ''){
+        alert('Please fill in all inputs');
+    
     }
-}
+    else if(maibox != logmail ){
+        alert("Wrong Email") ;
+this.location.href = location;
+    }
+    else if(passbox != lopw){
+      alert("Wrong Password");
+    }
+    else if(maibox.value.length == 0){
+        alert('Please fill in Email');
+    
+    }
+    else if(passbox.value.length == 0){
+        alert('Please fill in password');
+    
+    }
+    else if(maibox == logmail && passbox == lopw ){
+        alert("Welcome " +sessionStorage.getItem('name'));
+        window.open("home.html");
+    }}
