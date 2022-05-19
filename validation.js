@@ -1,11 +1,11 @@
 function signup(){
 var names = document.getElementById('name');
-var surname = document.getElementById('surname');
-var mail = document.getElementById('email');
-var Password = document.getElementById('pwd');
-var lowerCaseLetters = /[a-z]/g;
-var upperCaseLetters = /[A-Z]/g;
-var numbers = /[0-9]/g;
+let surname = document.getElementById('surname');
+let mail = document.getElementById('email');
+let Password = document.getElementById('pwd');
+let lowerCaseLetters = /[a-z]/g;
+let upperCaseLetters = /[A-Z]/g;
+let numbers = /[0-9]/g;
 
     sessionStorage.setItem('name', names.value);
     sessionStorage.setItem('surname',surname.value);
@@ -111,3 +111,15 @@ window.open("home.html");}
             img.src=sessionStorage.getItem("img");
             document.getElementById("userName").innerText = sessionStorage.getItem("name");
         }
+
+function logout(){
+let names = document.getElementById('name');
+let surname = document.getElementById('surname');
+let mail = document.getElementById('email');
+let img = document.getElementById('img');
+let Password = document.getElementById('pwd');
+    sessionStorage.removeItem('name', names.value);
+    sessionStorage.removeItem('surname',surname.value);
+    sessionStorage.removeItem('mail',mail.value);
+    sessionStorage.removeItem('Password', Password.value);
+    window.open("index.html");}

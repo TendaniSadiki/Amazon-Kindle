@@ -39,6 +39,8 @@
     </div>
     <script src="validation.js" ></script>
     <script>
+      
+
         const img = document.getElementById('img');
     img.addEventListener("change", function(){
     var readimgfile= new FileReader();
@@ -48,6 +50,7 @@
         }
     readimgfile.readAsDataURL(this.files[0]);
 });
+    
     </script>
 </body>
 </html>

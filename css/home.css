@@ -346,9 +346,182 @@ overflow-y: hidden;
       color: #79cf33;
      
     }
+    .main {
+      float: left;
+      width: 100%;
+      padding: 0 20px;
+    }
+    
+    .readlastTime{
+      width: 100%;
+      overflow-x: hidden;
+      
+    }
+    
+    .readlastTime ul{
+      overflow-x: hidden;
+     
+      width: 100%;
+      scroll-snap-align: start;
+      max-height: 100%;
+      overflow-y: hidden;
+      
+    }
+    .readlastTime ul li div img{
+      border-radius: 15px;
+      margin-left: 20px;
+      margin-top: -10px;
+      
+    }
+    .readlastTime ul li h1{
+      font-size: 1rem;
+      margin-top: -160px;
+      margin-left: 200px;
+      padding: 2px;
+    }
+    .readlastTime ul li{
+      list-style: none;
+      padding: 10px;
+      height: auto;
+      width: 1000%;
+      
+    }
+    
+    .readlastTime ul li p{
+      margin-top: 5px;
+      margin-left: 200px;
+    }
+    .readlastTime ul li div{
+      height:10rem;
+      width: 25rem;
+      border-radius: 40px;
+      left: 8rem;
+      
+    }
     
   
 }
 
 
   /* For mobile phones: */
+  @media only screen and (min-width: 1000px) {
+.navContent{
+  float: right;
+  margin-top: -35px;
+}
+.navContent a{
+  text-decoration: none;
+  margin: 20px;
+  color: #000000;
+}
+.navContent input[type=search]{
+  margin: -34px;
+  padding: 18px;
+}
+.navContent input{
+  border-radius: 25px;
+  margin: 10px;
+  height: 30px;
+  width: 200px;
+}
+.newRelease{
+  width: 85%;
+  float: left;
+ }
+ 
+ .newRelease ul{
+   display: inline-flex;
+    margin-top: 200px;
+          
+ }
+ .newRelease ul li{
+   
+   list-style: none;
+   border-radius: 20px; ;
+   cursor: pointer;
+   margin-top: -20px;
+   
+  
+ }
+ .newRelease ul li button{
+   border-radius: 15px;
+ }
+ .newRelease ul li div img{
+   border-radius: 15px;
+   width: 50%;
+   height: 50%;
+   margin-top: -50px;
+ 
+ }
+ .newRelease ul li a{
+   text-decoration: none;
+ }
+ .newRelease ul li h4{
+   padding-left: 10px;
+ }
+ 
+ .right {
+   background-color: #e5e5e5;
+   float: right;
+   width: 15%;
+   text-align: center;
+   border-top-left-radius: 15px;
+   border-bottom-left-radius: 15px;
+   margin-top: -400px;
+   height: 400px;
+  
+  
+ }
+ .right h1{
+   font-size: 1rem;  
+ }
+ .authorImg{
+   margin-top: -8px;
+   width:40px;
+   height: 40px;
+   border-radius: 50%;
+ }
+ .right ul li{
+   list-style: none;
+   cursor: pointer;
+   
+   
+ }
+ .right ul li h3{
+   font-size: 1rem;
+   margin-top: -6px;
+ }
+ .profileContent{
+  
+  background-image: linear-gradient(#ECEAE8,#DDD0BB);
+  width: 100%;
+  height: 350px;
+  margin-top: 20px;
+  text-align: center;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.profileContent img{
+  border-radius: 15px;
+  margin-top: 30px;
+  width: 120px;
+  height: 120px;
+  text-align: center;
+  
+}
+.username{
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: -10px;
+  
+}
+.sidebarItem{
+  margin-top: 100px;
+  padding: 30px;
+}
+
+.productContent img{
+  margin-left: 80px;
+}
+
+  }
