@@ -310,8 +310,7 @@ overflow-y: hidden;
       background: #F6F5F3;
       top: 0;
       left: 0;
-      font-family: 'Exo 2', sans-serif;
-      padding: 1em;
+      padding: 20px;
       height: 200px;
     }
     .navLeft img{
