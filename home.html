@@ -6,19 +6,15 @@
 <link rel="stylesheet" href="./css/home.css" >
 <script src="https://kit.fontawesome.com/c46e19eb27.js" crossorigin="anonymous"></script>
 </head>
-<body >
+<body onload="chaneTheImage()">
 <div class="kindleContent">
   <div style="overflow:auto">
     <div class="menu">
       <div class="profileContent">
-        <img src="./assets/bookImg/profile.jpg" alt="profile picture" width="150px" width="150px">
+        <img id="userImg" src="./assets/bookImg/profile.jpg" alt="profile picture" width="150px" width="150px">
            <h3>Welcome <br>Back</h3>
            <p class="username" id="userName"></p>
-           <script>
-            localStorage.getItem('name');
-            const sname=[namell];
-            document.getElementById('userName').innerHTML=[0];
-                   </script>
+        
            <br>
        </div>
        <div class="sidebarItem">
