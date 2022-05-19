@@ -111,15 +111,3 @@ window.open("home.html");}
             img.src=sessionStorage.getItem("img");
             document.getElementById("userName").innerText = sessionStorage.getItem("name");
         }
-
-function logout(){
-let names = document.getElementById('name');
-let surname = document.getElementById('surname');
-let mail = document.getElementById('email');
-let img = document.getElementById('img');
-let Password = document.getElementById('pwd');
-    sessionStorage.removeItem('name', names.value);
-    sessionStorage.removeItem('surname',surname.value);
-    sessionStorage.removeItem('mail',mail.value);
-    sessionStorage.removeItem('Password', Password.value);
-    window.open("index.html");}

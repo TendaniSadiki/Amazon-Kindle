@@ -149,6 +149,21 @@
 </div>
 </div>
 </div>
+<script>
+    
+function logout(){
+let names = document.getElementById('name');
+let surname = document.getElementById('surname');
+let mail = document.getElementById('email');
+let img = document.getElementById('img');
+let Password = document.getElementById('pwd');
+    sessionStorage.clear('name', names.value);
+    sessionStorage.clear('surname',surname.value);
+    sessionStorage.clear('mail',mail.value);
+    sessionStorage.clear('Password', Password.value);
+    window.open("index.html");}
+
+</script>
 <script src="./validation.js"></script>
 <script src="./js/index.js"></script>
 </body>
