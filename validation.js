@@ -1,4 +1,3 @@
-1
 function signup(){
 var names = document.getElementById('name');
 var surname = document.getElementById('surname');
@@ -107,8 +106,8 @@ window.open("home.html");}
     // }
        }
 
-    function chaneTheImage(){
-        const img=document.getElementById("userImg");
-        img.src=sessionStorage.getItem("file");
-        document.getElementById("userName").innerText = sessionStorage.getItem("name");
-    }
+        function chaneTheImage(){
+            const img=document.getElementById("userImg");
+            img.src=sessionStorage.getItem("img");
+            document.getElementById("userName").innerText = sessionStorage.getItem("name");
+        }
