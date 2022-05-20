@@ -91,6 +91,9 @@ overflow-y: hidden;
   margin-top: -10px;
   
 }
+.readlastTime ul li div p{
+  margin-left:145px;
+}
 .readlastTime ul li h1{
   font-size: 1rem;
   margin-top: -160px;
