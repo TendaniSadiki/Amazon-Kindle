@@ -48,9 +48,7 @@ let readLastTimeBookspages ={
     book3: '55 pages . Yet to read',
     book4: 'New Purchase',
     book5: '201 Pages . Chapter 23 . Yet to read',
-    book6: '30 Pages . Read recent',
-    
-
+    book6: '30 Pages . Read recent',   
 }
 //print output
 document.getElementById('readLastHeading').innerHTML = readLastTimeBookspages.readLast;
@@ -68,8 +66,6 @@ let newReleaseBooks ={
     book3: 'If We disapper here',
     book4: 'Starngers we know',
     book5: 'At the quite edge',
-    
-
 }
 //print output
 document.getElementById('newReleaseHeading').innerHTML = newReleaseBooks.newRelease;
@@ -78,3 +74,32 @@ document.getElementById('bookNameRelease2').innerHTML = newReleaseBooks.book2;
 document.getElementById('bookNameRelease3').innerHTML = newReleaseBooks.book3;
 document.getElementById('bookNameRelease4').innerHTML = newReleaseBooks.book4;
 document.getElementById('bookNameRelease5').innerHTML = newReleaseBooks.book5;
+
+let AuthorsName ={
+    book1: 'Matthew Richard',
+    book2:'Stephanie Decaroli',
+    book3: 'Slice life',
+    book4: 'Elle Marr',
+    book5: 'Victoria  Helen',
+}
+//print output
+document.getElementById('bookNameReleaseAuthors1').innerHTML =AuthorsName.book1;
+document.getElementById('bookNameReleaseAuthors2').innerHTML =AuthorsName.book2;
+document.getElementById('bookNameReleaseAuthors3').innerHTML =AuthorsName.book3;
+document.getElementById('bookNameReleaseAuthors4').innerHTML =AuthorsName.book4;
+document.getElementById('bookNameReleaseAuthors5').innerHTML =AuthorsName.book5;
+
+
+let movieGenres ={
+    book1: 'Matthew Richard',
+    book2:'Stephanie Decaroli',
+    book3: 'Slice life',
+    book4: 'Elle Marr',
+    book5: 'Victoria  Helen',
+}
+//print output
+document.getElementById('bookNameReleaseAuthors1').innerHTML =AuthorsName.book1;
+document.getElementById('bookNameReleaseAuthors2').innerHTML =AuthorsName.book2;
+document.getElementById('bookNameReleaseAuthors3').innerHTML =AuthorsName.book3;
+document.getElementById('bookNameReleaseAuthors4').innerHTML =AuthorsName.book4;
+document.getElementById('bookNameReleaseAuthors5').innerHTML =AuthorsName.book5;

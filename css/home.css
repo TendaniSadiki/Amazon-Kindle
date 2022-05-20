@@ -296,7 +296,8 @@ overflow-y: hidden;
   }
   
   .fa-bars{
-   color: black; 
+   color: black;
+    
   }
   .fa-arrow-left,.fa-arrow-right{
     display: none;

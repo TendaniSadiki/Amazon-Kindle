@@ -7,6 +7,7 @@ let lowerCaseLetters = /[a-z]/g;
 let upperCaseLetters = /[A-Z]/g;
 let numbers = /[0-9]/g;
 
+    
     sessionStorage.setItem('name', names.value);
     sessionStorage.setItem('surname',surname.value);
     sessionStorage.setItem('mail',mail.value);
