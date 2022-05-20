@@ -42,6 +42,7 @@ document.getElementById('bookName5').innerHTML = readLastTimeBooks.book5;
 document.getElementById('bookName6').innerHTML = readLastTimeBooks.book6;
 
 let readLastTimeBookspages ={
+    readLast: 'Books you read last',
     book1: '100 Pages . Chapter 5 . Last read',
     book2:'193 Pages . Chapter 13 . Yet to read',
     book3: '55 pages . Yet to read',
@@ -52,6 +53,7 @@ let readLastTimeBookspages ={
 
 }
 //print output
+document.getElementById('readLastHeading').innerHTML = readLastTimeBookspages.readLast;
 document.getElementById('bookPages1').innerHTML = readLastTimeBookspages.book1;
 document.getElementById('bookPages2').innerHTML = readLastTimeBookspages.book2;
 document.getElementById('bookPages3').innerHTML = readLastTimeBookspages.book3;
@@ -60,6 +62,7 @@ document.getElementById('bookPages5').innerHTML = readLastTimeBookspages.book5;
 document.getElementById('bookPages6').innerHTML = readLastTimeBookspages.book6;
 
 let newReleaseBooks ={
+    newRelease:'New Release',
     book1: 'The Insider',
     book2:'Deadly Little Lies',
     book3: 'If We disapper here',
@@ -69,6 +72,7 @@ let newReleaseBooks ={
 
 }
 //print output
+document.getElementById('newReleaseHeading').innerHTML = newReleaseBooks.newRelease;
 document.getElementById('bookNameRelease1').innerHTML = newReleaseBooks.book1;
 document.getElementById('bookNameRelease2').innerHTML = newReleaseBooks.book2;
 document.getElementById('bookNameRelease3').innerHTML = newReleaseBooks.book3;
