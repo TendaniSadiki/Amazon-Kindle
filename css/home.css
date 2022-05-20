@@ -169,15 +169,16 @@ overflow-y: hidden;
   margin-left: -70px;
 }
 .fa-arrow-right{
-  margin-left: 700px;
+  
   margin-top: 72px;
   float: right;
-  right: 0;
+  right: 20px;
   
 }
 .fa-arrow-left,.fa-arrow-right{
   cursor: pointer;
   position: fixed;
+  font-size: 1.5rem;
 }
 
 .newRelease{
@@ -270,6 +271,9 @@ overflow-y: hidden;
   font-size: 1rem;
   text-decoration: none;
 }
+@media only screen and (min-width: 740px) {
+
+}
 @media only screen and (max-width: 620px) {
   /* For mobile phones: */
   body{
@@ -282,6 +286,7 @@ overflow-y: hidden;
   }
   .kindleContent{
     margin-top: 120px;
+    position:inherit;
   }
   .readlastTime ul{
     display: block;
@@ -311,7 +316,7 @@ overflow-y: hidden;
       top: 0;
       left: 0;
       padding: 20px;
-      height: 200px;
+      height: 250px;
     }
     .navLeft img{
       margin-bottom: 40px;
@@ -334,7 +339,7 @@ overflow-y: hidden;
       
     }
     .profileContent{
-      margin-top: 70px;
+      margin-top: 120px;
       border: none;
       
     }
@@ -358,12 +363,11 @@ overflow-y: hidden;
     }
     
     .readlastTime ul{
-      overflow-x: hidden;
-     
+      
       width: 100%;
-      scroll-snap-align: start;
+      
       max-height: 100%;
-      overflow-y: hidden;
+      
       
     }
     .readlastTime ul li div img{
@@ -382,7 +386,8 @@ overflow-y: hidden;
       list-style: none;
       padding: 10px;
       height: auto;
-      width: 1000%;
+      margin-left: -50px;
+      
       
     }
     
@@ -392,9 +397,9 @@ overflow-y: hidden;
     }
     .readlastTime ul li div{
       height:10rem;
-      width: 25rem;
-      border-radius: 40px;
-      left: 8rem;
+      width: 20rem;
+      
+      left: 0;
       
     }
     
@@ -403,24 +408,24 @@ overflow-y: hidden;
 
 
   /* For mobile phones: */
-  @media only screen and (min-width: 1000px) {
+  @media only screen and (min-width: 1200px) {
 .navContent{
   float: right;
   margin-top: -35px;
 }
 .navContent a{
   text-decoration: none;
-  margin: 20px;
+  margin: 10px;
   color: #000000;
 }
 .navContent input[type=search]{
-  margin: -34px;
-  padding: 18px;
+  margin: -24px;
+  
 }
+
 .navContent input{
   border-radius: 25px;
   margin: 10px;
-  height: 30px;
   width: 200px;
 }
 .newRelease{
