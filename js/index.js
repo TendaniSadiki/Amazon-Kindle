@@ -101,11 +101,11 @@ document.getElementById('bookNameReleaseAuthors5').innerHTML =AuthorsName.book5;
 
 
 let genres ={
-    book1: 'Matthew Richard',
-    book2:'Stephanie Decaroli',
-    book3: 'Slice life',
-    book4: 'Elle Marr',
-    book5: 'Victoria  Helen',
+    book1: 'Action',
+    book2:'fantasy',
+    book3: 'Romance',
+    book4: 'Thriller',
+    book5: 'Sci fi',
 }
 //print output
 document.getElementById('bookGenres1').innerHTML =genres.book1;
