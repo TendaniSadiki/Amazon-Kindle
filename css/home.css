@@ -14,6 +14,7 @@ overflow-y: hidden;
  .kindleContent{
      height: 100%;
      min-height: 100%;
+     margin: auto;
  }
 * {
   box-sizing: border-box;
@@ -90,6 +91,9 @@ overflow-y: hidden;
   margin-left: 20px;
   margin-top: -10px;
   
+}
+.readlastTime ul li div p{
+  margin-left:145px;
 }
 .readlastTime ul li h1{
   font-size: 1rem;
@@ -271,8 +275,11 @@ overflow-y: hidden;
   font-size: 1rem;
   text-decoration: none;
 }
-@media only screen and (min-width: 740px) {
 
+@media only screen and (min-width: 620px) {
+  .fa-bars{
+    display: none;
+  }
 }
 @media only screen and (max-width: 620px) {
   /* For mobile phones: */
@@ -286,16 +293,17 @@ overflow-y: hidden;
   }
   .kindleContent{
     margin-top: 120px;
-    position:inherit;
+    
   }
   .readlastTime ul{
     display: block;
   }
   
   .fa-bars{
-   color: black; 
+   color: black;
+    
   }
-  .fa-arrow-left,.fa-arrow-right{
+  .fa-arrow-left, .fa-arrow-right{
     display: none;
   }
   .newRelease{
@@ -307,7 +315,9 @@ overflow-y: hidden;
     text-align: center;
     
   }
-
+  .fa-search{
+    color: #000000;
+  }
   .topnav{
     
       position: fixed;
@@ -315,29 +325,40 @@ overflow-y: hidden;
       background: #F6F5F3;
       top: 0;
       left: 0;
-      padding: 20px;
-      height: 250px;
+      height: 140px;
+      overflow: hidden;
+    }
+    .topnav #myLinks {
+      display: none;
+      background-color: #000000;
+    }
+    
+  
+    
+    .topnav a {
+      color:white;
+      text-decoration: none;
+      font-size: 17px;
+      display: inline-block;
+    }
+    
+    .topnav a.icon {
+      
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
     }
     .navLeft img{
       margin-bottom: 40px;
     }
-    .navContent input{
-      border-radius: 25px;
-      margin-top: -100px;
-      position: relative;
-     
-     
-    }
     
-    .navContent a{
-      margin-top: 30px;
-      display: inline-flex;
-      padding: 0;
-    }
-    .searchbar{
-      margin-left: 50px;
-      
-    }
+    
     .profileContent{
       margin-top: 120px;
       border: none;
@@ -346,60 +367,75 @@ overflow-y: hidden;
     .right ul li {
       display: inline-flex;
     }
-    .navlink{
-      color: #79cf33;
-     
+    
+    .profileContent{
+  
+      background-image: linear-gradient(#ECEAE8,#DDD0BB);
+      width: 100%;
+      height: 350px;
+      margin-top: 20px;
+      text-align: center;
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
+    }
+    .profileContent img{
+      border-radius: 15px;
+      margin-top: 30px;
+      width: 120px;
+      height: 120px;
+      text-align: center;
+      
     }
     .main {
       float: left;
       width: 100%;
-      padding: 0 20px;
+      max-width: 100%;
+     
     }
     
     .readlastTime{
       width: 100%;
       overflow-x: hidden;
+      text-align: center;
       
     }
     
     .readlastTime ul{
-      
       width: 100%;
-      
-      max-height: 100%;
-      
       
     }
     .readlastTime ul li div img{
       border-radius: 15px;
       margin-left: 20px;
-      margin-top: -10px;
+      margin-top: 100px;
+      width: 200px;
+      height: 200px;
+      
       
     }
     .readlastTime ul li h1{
-      font-size: 1rem;
-      margin-top: -160px;
-      margin-left: 200px;
-      padding: 2px;
+      font-size: 3rem;
+      margin-top: 50px;
     }
     .readlastTime ul li{
       list-style: none;
-      padding: 10px;
+      
       height: auto;
       margin-left: -50px;
+
       
       
     }
     
     .readlastTime ul li p{
       margin-top: 5px;
-      margin-left: 200px;
+      
+      
     }
     .readlastTime ul li div{
-      height:10rem;
-      width: 20rem;
-      
-      left: 0;
+      height:40rem;
+      width: 100%;
+    
       
     }
     
@@ -407,7 +443,7 @@ overflow-y: hidden;
 }
 
 
-  /* For mobile phones: */
+  /* For Large screen */
   @media only screen and (min-width: 1200px) {
 .navContent{
   float: right;

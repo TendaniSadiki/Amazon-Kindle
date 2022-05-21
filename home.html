@@ -39,6 +39,7 @@
           </div>
           <div class="navContent">
               <nav>
+                <div id="myLinks">
                   <a href="#" class="searchbar">
                      <input type="search" placeholder="Search your books">
                      <i class="fas fa-search"></i>
@@ -46,6 +47,10 @@
                   <a class="navlink" href="#">New release</a>
                   <a class="navlink" href="#">Futured</a>
                   <a class="navlink" href="#">Icon</a>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                  </a>
                 
               </nav>
           </div>
@@ -55,7 +60,7 @@
 
   <div class="main">
     <div class="readlastTime">
-      <h1>Books you read last</h1>
+      <h1 id="readLastHeading"></h1>
       <ul class="scrollContainer"   id="scrollbar">
         <div id="horizontalScroll">
             <span><i class="fas fa-arrow-left" onclick="left()" id="scrollLeft"></i></span>
@@ -63,59 +68,59 @@
             
          </div>
              <li><div class="book1"><img src="./assets/bookImg/book1.jpg" height="180px"; width="120px" >
-              <h1>The Silent Wife
+              <h1 id="bookName1">
               </h1>
-              <p>number of pages</p>
+              <p id="bookPages1"></p>
           </div></li>
            <li><div class="book2" ><img src="./assets/bookImg/book2.jpg" height="180px"; width="120px" >
-              <h1>Wildcat</h1>
-              <p>number of pages</p>
+              <h1 id="bookName2"></h1>
+              <p id="bookPages2"></p>
           </div></li>
            <li><div class="book3"><img src="./assets/bookImg/book3.jpg" height="180px"; width="120px" >
-              <h1>Dark Purpose</h1>
-              <p>number of pages</p>
+              <h1 id="bookName3"></h1>
+              <p id="bookPages3"></p>
           </div></li>
            <li><div class="book4"><img src="./assets/bookImg/book4.jpg" height="180px"; width="120px" >
-              <h1>Write My Name Across The Sky</h1>
-              <p>number of pages</p>
+              <h1 id="bookName4"></h1>
+              <p id="bookPages4"></p>
           </div></li>
            <li><div class="book5"><img src="./assets/bookImg/book5.jpg" height="180px"; width="120px" >
-              <h1>He Who Fights The Monster</h1>
-              <p>number of pages</p>
+              <h1 id="bookName5"></h1>
+              <p id="bookPages5"></p>
           </div></li>
            <li><div class="book6"><img src="./assets/bookImg/book6.jpg" height="180px"; width="120px" >
-              <h1>The Watch Maker</h1>
-              <p>number of pages</p>
+              <h1 id="bookName6"></h1>
+              <p id="bookPages6"></p>
           </div></li>    
       </ul>
   </div>
   <div class="newRelease">
-    <h1>New release</h1>
+    <h1 id="newReleaseHeading"></h1>
     <ul class="newReleaseScroll">
         <li><div><img src="./assets/bookImg/r1.jpg" height="80px"; width="80px" >
-            <h4>The Insider</h4>
-            <p>Matthew Richard</p>
-            <button>Action</button>
+            <h4 id="bookNameRelease1"></h4>
+            <p id="bookNameReleaseAuthors1"></p>
+            <button id="bookGenres1"></button>
         </div></li>
         <li><div><img src="./assets/bookImg/r2.jpg" height="80px"; width="80px" >
-            <h4>Deadly Little Lies</h4>
-            <p>Stephanie Decarolis</p>
-            <button>Slice life</button>
+            <h4 id="bookNameRelease2"></h4>
+            <p id="bookNameReleaseAuthors2"></p>
+            <button id="bookGenres2"></button>
             <div></li>
         <li><div><img src="./assets/bookImg/r3.jpg" height="80px"; width="80px" >
-            <h4>If We disapper here</h4>
-            <p>M Hayes</p>
-            <button>Comedy</button>
+            <h4 id="bookNameRelease3"></h4>
+            <p id="bookNameReleaseAuthors3"></p>
+            <button id="bookGenres3"></button>
         </div></li>
         <li><div><img src="./assets/bookImg/r4.jpg" height="80px"; width="80px" >
-            <h4>Starngers we know</h4>
-            <p>Elle Marr</p>
-            <button>Romance</button>
+            <h4 id="bookNameRelease4"></h4>
+            <p id="bookNameReleaseAuthors4"></p>
+            <button id="bookGenres4"></button>
         </div></li>
         <li><div><img src="./assets/bookImg/r5.jpg" height="80px"; width="80px" >
-            <h4>At the quite edge</h4>
-            <p>Victoria  Helen</p>
-            <button>Horror</button>
+            <h4 id="bookNameRelease5"></h4>
+            <p id="bookNameReleaseAuthors5"></p>
+            <button id="bookGenres5"></button>
         </div></li>
     </ul>
 </div>
