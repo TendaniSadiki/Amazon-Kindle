@@ -328,18 +328,21 @@ overflow-y: hidden;
       height: 140px;
       overflow: hidden;
     }
+    
     .topnav #myLinks {
-      display: none;
+      
       background-color: #000000;
+      color: white;
+     
     }
     
-  
-    
     .topnav a {
-      color:white;
+      color:rgb(255, 255, 255);
+      
       text-decoration: none;
       font-size: 17px;
-      display: inline-block;
+      
+      
     }
     
     .topnav a.icon {
@@ -357,7 +360,13 @@ overflow-y: hidden;
     .navLeft img{
       margin-bottom: 40px;
     }
-    
+    .navContent input{
+      border-radius: 25px;
+      margin-top: -100px;
+      
+     
+     
+    }
     
     .profileContent{
       margin-top: 120px;
@@ -367,7 +376,10 @@ overflow-y: hidden;
     .right ul li {
       display: inline-flex;
     }
-    
+    .navlink{
+      color: #79cf33;
+     
+    }
     .profileContent{
   
       background-image: linear-gradient(#ECEAE8,#DDD0BB);

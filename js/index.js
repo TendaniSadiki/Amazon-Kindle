@@ -100,11 +100,7 @@ document.getElementById('bookNameReleaseAuthors4').innerHTML =AuthorsName.book4;
 document.getElementById('bookNameReleaseAuthors5').innerHTML =AuthorsName.book5;
 
 
-<<<<<<< HEAD
 let genres ={
-=======
-let movieGenres ={
->>>>>>> 7d6a0c86f37be131c69412a83235920ca8721a81
     book1: 'Matthew Richard',
     book2:'Stephanie Decaroli',
     book3: 'Slice life',
@@ -112,16 +108,8 @@ let movieGenres ={
     book5: 'Victoria  Helen',
 }
 //print output
-<<<<<<< HEAD
 document.getElementById('bookGenres1').innerHTML =genres.book1;
 document.getElementById('bookGenres2').innerHTML =genres.book2;
 document.getElementById('bookGenres3').innerHTML =genres.book3;
 document.getElementById('bookGenres4').innerHTML =genres.book4;
 document.getElementById('bookGenres5').innerHTML =genres.book5;
-=======
-document.getElementById('bookNameReleaseAuthors1').innerHTML =AuthorsName.book1;
-document.getElementById('bookNameReleaseAuthors2').innerHTML =AuthorsName.book2;
-document.getElementById('bookNameReleaseAuthors3').innerHTML =AuthorsName.book3;
-document.getElementById('bookNameReleaseAuthors4').innerHTML =AuthorsName.book4;
-document.getElementById('bookNameReleaseAuthors5').innerHTML =AuthorsName.book5;
->>>>>>> 7d6a0c86f37be131c69412a83235920ca8721a81
