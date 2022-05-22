@@ -51,7 +51,7 @@ else if(!Password.value.match(lowerCaseLetters)){
 }
 else{
     alert('Your account has been created');
-    window.location.href("index.html");
+    window.open("index.html");
     
     
 }
