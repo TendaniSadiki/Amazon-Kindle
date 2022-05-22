@@ -113,3 +113,29 @@ document.getElementById('bookGenres2').innerHTML =genres.book2;
 document.getElementById('bookGenres3').innerHTML =genres.book3;
 document.getElementById('bookGenres4').innerHTML =genres.book4;
 document.getElementById('bookGenres5').innerHTML =genres.book5;
+
+let famousAuthors ={
+    header: 'Famous Authors',
+    author1: 'P Macdonald',
+    author2:'W Parker',
+    author3: 'A Winter'
+   
+}
+//print output
+document.getElementById('authorHeader').innerHTML = famousAuthors.header;
+document.getElementById('author1').innerHTML =famousAuthors.author1;
+document.getElementById('author2').innerHTML =famousAuthors.author2;
+document.getElementById('author3').innerHTML =famousAuthors.author3;
+
+let famousAuthorsBooks ={
+ 
+    authorbooks1: '54 Books',
+    authorbooks2:'12 Books',
+    authorbooks3: '33 Books'
+   
+}
+//print output
+document.getElementById('authorbook1').innerHTML =famousAuthorsBooks.authorbooks1;
+document.getElementById('authorbook2').innerHTML =famousAuthorsBooks.authorbooks2;
+document.getElementById('authorbook3').innerHTML =famousAuthorsBooks.authorbooks3;
+

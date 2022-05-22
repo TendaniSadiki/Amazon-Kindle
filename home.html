@@ -127,48 +127,33 @@
   </div>
 
   <div class="right">
-    <h1>Famous Authors</h1>
+    <h1 id="authorHeader"></h1>
     <ul>
         <li>
             <img src="./assets/bookImg/author1.jpg" class="authorImg" >
             <div class="authorinfo">
-                <h3>P Macdonald</h3>
-                <p>54 Books</p>
+                <h3 id="author1"></h3>
+                <p id="authorbook1"></p>
             </div>
         </li>
         <li>
             <img src="./assets/bookImg/aut2.jpg" class="authorImg" >
             <div class="authorinfo">
-                <h3>W Parker</h3>
-                <p>12 Books</p>
+                <h3 id="author2"></h3>
+                <p id="authorbook2"></p>
             </div>
         </li>
         <li>
             <img src="./assets/bookImg/aut3.jpg" class="authorImg" >
             <div class="authorinfo">
-                <h3>A Winter</h3>
-                <p>33    Books</p>
+                <h3 id="author3"></h3>
+                <p id="authorbook3"></p>
             </div>
         </li>
     </ul>
 </div>
 </div>
 </div>
-<script>
-    
-function logout(){
-let names = document.getElementById('name');
-let surname = document.getElementById('surname');
-let mail = document.getElementById('email');
-let img = document.getElementById('img');
-let Password = document.getElementById('pwd');
-    sessionStorage.clear('name', names.value);
-    sessionStorage.clear('surname',surname.value);
-    sessionStorage.clear('mail',mail.value);
-    sessionStorage.clear('Password', Password.value);
-    window.open("index.html");}
-
-</script>
 <script src="./validation.js"></script>
 <script src="./js/index.js"></script>
 </body>
