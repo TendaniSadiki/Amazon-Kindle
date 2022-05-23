@@ -280,6 +280,7 @@ overflow-y: hidden;
   .fa-bars{
     display: none;
   }
+  
 }
 @media only screen and (max-width: 620px) {
   /* For mobile phones: */
@@ -334,6 +335,7 @@ overflow-y: hidden;
       background-color: #000000;
       color: white;
       display: none;
+      display: block;
      
     }
     
@@ -358,9 +360,10 @@ overflow-y: hidden;
       background-color: #ddd;
       color: black;
     }
-    .navLeft img{
+    .kindleImg {
       margin-bottom: 40px;
     }
+    
     .navContent input{
       border-radius: 25px;
       margin-top: -100px;

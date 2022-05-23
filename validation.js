@@ -17,6 +17,10 @@ if(names.value.length == 0 && surname.value.length == 0 && mail.value.length == 
     alert('Please fill in all inputs');
 
 }
+else if(Password.value.length > 6){
+    alert('Max of 6');
+
+}
 else if(names.value.length == 0){
     alert('Please fill in Username');
 
@@ -31,10 +35,6 @@ else if(mail.value.length == 0){
 }
 else if(Password.value.length == 0){
     alert('Please fill in password');
-
-}
-else if(Password.value.length > 8){
-    alert('Max of 8');
 
 }
 else if(!Password.value.match(numbers)){
