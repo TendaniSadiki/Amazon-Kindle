@@ -84,6 +84,7 @@ overflow-y: hidden;
   scroll-snap-align: start;
   max-height: 100%;
   overflow-y: hidden;
+  margin-top: -10px;
   
 }
 .readlastTime ul li div img{
@@ -169,14 +170,14 @@ overflow-y: hidden;
 }
 .fa-arrow-left{
    
-  margin: 86px;
-  margin-left: -70px;
+  margin: 74px;
+  margin-left: -22px;
 }
 .fa-arrow-right{
   
   margin-top: 72px;
   float: right;
-  right: 20px;
+  right: 36px;
   
 }
 .fa-arrow-left,.fa-arrow-right{
@@ -193,6 +194,7 @@ overflow-y: hidden;
 .newRelease ul{
   display: inline-flex;
   margin-left: -50px;
+  margin-top: 0px;
          
 }
 .newRelease ul li{
@@ -200,6 +202,7 @@ overflow-y: hidden;
   list-style: none;
   border-radius: 20px; ;
   cursor: pointer;
+  padding: 2px;
   
  
 }
@@ -221,7 +224,7 @@ overflow-y: hidden;
   background-color: #e5e5e5;
   float: right;
   width: 15%;
-  margin-top: -330px;
+  margin-top: -310px;
   text-align: center;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
@@ -276,6 +279,7 @@ overflow-y: hidden;
   text-decoration: none;
 }
 
+
 @media only screen and (min-width: 748px) {
   .fa-bars{
     display: none;
@@ -293,7 +297,7 @@ overflow-y: hidden;
     margin: 0;
   }
   .kindleContent{
-    margin-top: 120px;
+    margin-top: 100px;
     
   }
   .readlastTime ul{
@@ -303,6 +307,9 @@ overflow-y: hidden;
   .fa-bars{
    color: black;
     
+  }
+  #navLink{
+    width: 200px;
   }
   .fa-arrow-left, .fa-arrow-right{
     display: none;
@@ -335,6 +342,8 @@ overflow-y: hidden;
       color: white;
       display: none;
       float: left;
+      
+      
      
     }
     

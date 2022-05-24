@@ -102,10 +102,10 @@ document.getElementById('bookNameReleaseAuthors5').innerHTML =AuthorsName.book5;
 
 let genres ={
     book1: 'Action',
-    book2:'fantasy',
+    book2:'Fantasy',
     book3: 'Romance',
     book4: 'Thriller',
-    book5: 'Sci fi',
+    book5: 'Sci Fi',
 }
 //print output
 document.getElementById('bookGenres1').innerHTML =genres.book1;
