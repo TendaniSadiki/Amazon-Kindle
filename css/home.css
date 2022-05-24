@@ -276,13 +276,13 @@ overflow-y: hidden;
   text-decoration: none;
 }
 
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 748px) {
   .fa-bars{
     display: none;
   }
   
 }
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 748px) {
   /* For mobile phones: */
   body{
     overflow: auto;
@@ -326,24 +326,24 @@ overflow-y: hidden;
       background: #F6F5F3;
       top: 0;
       left: 0;
-      height: 140px;
-      overflow: hidden;
-    }
+      height: 100px;
+      }
     
     .topnav #myLinks {
       
       background-color: #000000;
       color: white;
       display: none;
-      display: block;
+      float: left;
      
     }
     
     .topnav a {
       color:rgb(255, 255, 255);
-      
+      display: block;
       text-decoration: none;
       font-size: 17px;
+      margin: 35px;
       
       
     }
@@ -367,6 +367,8 @@ overflow-y: hidden;
     .navContent input{
       border-radius: 25px;
       margin-top: -100px;
+      right: 0;
+      
       
      
      
@@ -432,6 +434,7 @@ overflow-y: hidden;
     .readlastTime ul li h1{
       font-size: 3rem;
       margin-top: 50px;
+      margin-left: 10px;
     }
     .readlastTime ul li{
       list-style: none;
