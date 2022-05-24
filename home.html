@@ -98,33 +98,94 @@
   <div class="newRelease">
     <h1 id="newReleaseHeading"></h1>
     <ul class="newReleaseScroll">
-        <li><div><img src="./assets/bookImg/r1.jpg" height="80px"; width="80px" >
-            <h4 id="bookNameRelease1"></h4>
-            <p id="bookNameReleaseAuthors1"></p>
-            <button id="bookGenres1"></button>
-        </div></li>
-        <li><div><img src="./assets/bookImg/r2.jpg" height="80px"; width="80px" >
-            <h4 id="bookNameRelease2"></h4>
-            <p id="bookNameReleaseAuthors2"></p>
-            <button id="bookGenres2"></button>
-            <div></li>
-        <li><div><img src="./assets/bookImg/r3.jpg" height="80px"; width="80px" >
-            <h4 id="bookNameRelease3"></h4>
-            <p id="bookNameReleaseAuthors3"></p>
-            <button id="bookGenres3"></button>
-        </div></li>
-        <li><div><img src="./assets/bookImg/r4.jpg" height="80px"; width="80px" >
-            <h4 id="bookNameRelease4"></h4>
-            <p id="bookNameReleaseAuthors4"></p>
-            <button id="bookGenres4"></button>
-        </div></li>
-        <li><div><img src="./assets/bookImg/r5.jpg" height="80px"; width="80px" >
-            <h4 id="bookNameRelease5"></h4>
-            <p id="bookNameReleaseAuthors5"></p>
-            <button id="bookGenres5"></button>
+        <li class="popup" onclick="myPopUp()"><div data-name="p-1">
+                <img src="./assets/bookImg/r1.jpg" height="80px"; width="80px" >
+                <h4 id="bookNameRelease1"></h4>
+                <p id="bookNameReleaseAuthors1"></p>
+                <button id="bookGenres1"></button>
+             </div>
+        </li>
+        <li><div data-name="p-2">
+                <img src="./assets/bookImg/r2.jpg" height="80px"; width="80px" >
+                <h4 id="bookNameRelease2"></h4>
+                <p id="bookNameReleaseAuthors2"></p>
+                <button id="bookGenres2"></button>
+            <div>
+        </li>
+        <li><div data-name="p-3">
+                <img src="./assets/bookImg/r3.jpg" height="80px"; width="80px" >
+                <h4 id="bookNameRelease3"></h4>
+                <p id="bookNameReleaseAuthors3"></p>
+                <button id="bookGenres3"></button>
+            </div>
+        </li>
+        <li><div data-name="p-4">
+                <img src="./assets/bookImg/r4.jpg" height="80px"; width="80px" >
+                <h4 id="bookNameRelease4"></h4>
+                <p id="bookNameReleaseAuthors4"></p>
+                <button id="bookGenres4"></button>
+        </div>
+        </li>
+        <li><div data-name="p-5">
+                <img src="./assets/bookImg/r5.jpg" height="80px"; width="80px" >
+                <h4 id="bookNameRelease5"></h4>
+                <p id="bookNameReleaseAuthors5"></p>
+                <button id="bookGenres5"></button>
         </div></li>
     </ul>
-</div>
+    <div class="popuptext" id="myPopup">
+    <div   class="productsPreview">
+    <div class="preview" data-target="p-1">
+        <p onclick="closeForm()">close</p>
+        <img src="./assets/bookImg/r1.jpg">
+        <h3>The Insider</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur nulla ullam voluptatem mollitia tempore voluptatibus impedit! Doloribus quaerat minima voluptatum sed deserunt labore enim in sequi est odit, porro temporibus?</p>
+        <div class="price">$3.00</div>
+        <div class="btn">
+            <a href="#">Add to cart</a>
+        </div>
+    </div>
+    </div>
+    </div>
+    <!--
+    <div class="preview" data-target="p-2">
+        <img src="./assets/bookImg/r2.jpg">
+        <h3>Deadly Little Lies</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur nulla ullam voluptatem mollitia tempore voluptatibus impedit! Doloribus quaerat minima voluptatum sed deserunt labore enim in sequi est odit, porro temporibus?</p>
+        <div class="price">$3.00</div>
+        <div class="btn">
+            <a href="#">Add to cart</a>
+        </div>
+    </div>
+    <div class="preview" data-target="p-3">
+        <img src="./assets/bookImg/r3.jpg">
+        <h3>If We disapper here</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur nulla ullam voluptatem mollitia tempore voluptatibus impedit! Doloribus quaerat minima voluptatum sed deserunt labore enim in sequi est odit, porro temporibus?</p>
+        <div class="price">$3.00</div>
+        <div class="btn">
+            <a href="#">Add to cart</a>
+        </div>
+    </div>
+    <div class="preview" data-target="p-4">
+        <img src="./assets/bookImg/r4.jpg">
+        <h3>Starngers we know</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur nulla ullam voluptatem mollitia tempore voluptatibus impedit! Doloribus quaerat minima voluptatum sed deserunt labore enim in sequi est odit, porro temporibus?</p>
+        <div class="price">$3.00</div>
+        <div class="btn">
+            <a href="#">Add to cart</a>
+        </div>
+    </div>
+    <div class="preview" data-target="p-5">
+        <img src="./assets/bookImg/r5.jpg">
+        <h3>At the quite edge</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur nulla ullam voluptatem mollitia tempore voluptatibus impedit! Doloribus quaerat minima voluptatum sed deserunt labore enim in sequi est odit, porro temporibus?</p>
+        <div class="price">$3.00</div>
+        <div class="btn">
+            <a href="#">Add to cart</a>
+        </div>
+    </div>
+    -->
+    </div>
   </div>
 
   <div class="right">

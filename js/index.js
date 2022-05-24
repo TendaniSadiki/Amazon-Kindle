@@ -33,6 +33,16 @@ function sideScroll(element,direction,speed,distance,step){
         }
     }, speed);
 }
+
+function myPopUp() {
+    document.getElementById("myPopup").style.display = "block";
+  }
+  
+  function closeForm() {
+    document.getElementById("myPopup").style.display = "none";
+  }
+
+
 let readLastTimeBooks ={
     book1: 'The Silent Wife',
     book2:'Wildcat',
