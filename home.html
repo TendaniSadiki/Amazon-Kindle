@@ -46,7 +46,7 @@
                   </a>
                   <a class="navlink" href="#">New release</a>
                   <a class="navlink" href="#">Futured</a>
-                  <a class="navlink" href="#"><i class="fas fa-shopping-cart"></i></a>
+                  <a class="navlink" href="#"><i class="fas fa-shopping-cart"></i><span class="cartnumber">2</span></a>
                   <a class="navlink" href="#"><img src="./assets/navbaricon.png" width="18px" height="18px"></a>
                 </div>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -98,35 +98,35 @@
   <div class="newRelease">
     <h1 id="newReleaseHeading"></h1>
     <ul class="newReleaseScroll">
-        <li class="popup" onclick="myPopUp()"><div data-name="p-1">
+        <li class="popup" onclick="myPopUpOne()"><div data-name="p-1">
                 <img src="./assets/bookImg/r1.jpg" height="80px"; width="80px" >
                 <h4 id="bookNameRelease1"></h4>
                 <p id="bookNameReleaseAuthors1"></p>
                 <button id="bookGenres1"></button>
              </div>
         </li>
-        <li><div data-name="p-2">
+        <li class="popup" onclick="myPopUpTwo()"><div data-name="p-2">
                 <img src="./assets/bookImg/r2.jpg" height="80px"; width="80px" >
                 <h4 id="bookNameRelease2"></h4>
                 <p id="bookNameReleaseAuthors2"></p>
                 <button id="bookGenres2"></button>
             <div>
         </li>
-        <li><div data-name="p-3">
+        <li class="popup" onclick="myPopUpThree()"><div data-name="p-3">
                 <img src="./assets/bookImg/r3.jpg" height="80px"; width="80px" >
                 <h4 id="bookNameRelease3"></h4>
                 <p id="bookNameReleaseAuthors3"></p>
                 <button id="bookGenres3"></button>
             </div>
         </li>
-        <li><div data-name="p-4">
+        <li class="popup" onclick="myPopUpFour()"><div data-name="p-4">
                 <img src="./assets/bookImg/r4.jpg" height="80px"; width="80px" >
                 <h4 id="bookNameRelease4"></h4>
                 <p id="bookNameReleaseAuthors4"></p>
                 <button id="bookGenres4"></button>
         </div>
         </li>
-        <li><div data-name="p-5">
+        <li class="popup" onclick="myPopUpFive()"><div data-name="p-5">
                 <img src="./assets/bookImg/r5.jpg" height="80px"; width="80px" >
                 <h4 id="bookNameRelease5"></h4>
                 <p id="bookNameReleaseAuthors5"></p>
@@ -139,53 +139,116 @@
         <p onclick="closeForm()">close</p>
         <img src="./assets/bookImg/r1.jpg">
         <h3>The Insider</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur nulla ullam voluptatem mollitia tempore voluptatibus impedit! Doloribus quaerat minima voluptatum sed deserunt labore enim in sequi est odit, porro temporibus?</p>
-        <div class="price">$3.00</div>
+        <p>
+            The thrilling novel of espionage and murder set in the dark heart of Westminster, from the UK's most exciting new spy writer
+A Russian defector is found brutally murdered in a London hotel.
+Only four people knew he had turned - the four most important and powerful figures in Whitehall.
+There's only one conclusion:
+A mole has infiltrated the highest levels of the nation's security.
+Operating in secret from within Westminster's darkest corners, former spy, Solomon Vine, must uncover the traitor.
+Because Britain's future hangs in the balance.
+And with it, the fate of the whole world . . .
+Praise for Matthew Richardson
+        </p>
+        <div class="price">$6.10</div>
         <div class="btn">
             <a href="#">Add to cart</a>
         </div>
     </div>
     </div>
     </div>
-    <!--
-    <div class="preview" data-target="p-2">
-        <img src="./assets/bookImg/r2.jpg">
-        <h3>Deadly Little Lies</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur nulla ullam voluptatem mollitia tempore voluptatibus impedit! Doloribus quaerat minima voluptatum sed deserunt labore enim in sequi est odit, porro temporibus?</p>
-        <div class="price">$3.00</div>
+    <div class="popuptext" id="myPopup2">
+        <div   class="productsPreview">
+        <div class="preview" data-target="p-1">
+            <p onclick="closeFormTwo()">close</p>
+            <img src="./assets/bookImg/r2.jpg">
+            <h3 >Deadly Little Lies</h3>
+            <p>
+    The NEW edge-of-your-seat thriller from the bestselling author of THE GUILTY HUSBAND!
+    ‘A complete thrill-ride of a book!’ NetGalley Reviewer, ⭐⭐⭐⭐⭐
+    When is the right time to tell your husband your marriage is a lie?
+    THE PERFECT LIFE
+    Juliana Daniels finally has the life she’s always dreamed of. A loving husband, a career as an attorney, and a cozy apartment in Manhattan to call home.
+    But when she gets a message from an old college friend, her blood runs cold. Remember me?
+    ONE DEADLY LIE
+    Juliana drops her phone as though she’s been scalded. The name Jenny Teller shines out from the screen… but Jenny can’t have sent that message.
+    Because Jenny is dead.
+    Juliana’s four college friends, a group of girls who once ruled Westbridge University like campus royalty, have received the same message. They’re the only ones who know the truth about the night Jenny died. It’s a secret they’ve kept buried for thirteen years.
+    WHO DO YOU TRUST?
+    With ‘Jenny’ now blackmailing them and threatening to expose their secret, there’s more than Juliana’s marriage on the line…
+    Someone knows the truth, and they won’t stop until Juliana’s life comes crashing down.
+    From the USA Today bestselling author of The Guilty Husband, comes an utterly nail-biting thriller that will have you gripped and reading long into the night! Fans of Big Little Lies and Pretty Little Liars will love this novel!
+    
+                
+            </p>
+        <div class="price">$3.44</div>
         <div class="btn">
             <a href="#">Add to cart</a>
         </div>
     </div>
-    <div class="preview" data-target="p-3">
-        <img src="./assets/bookImg/r3.jpg">
-        <h3>If We disapper here</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur nulla ullam voluptatem mollitia tempore voluptatibus impedit! Doloribus quaerat minima voluptatum sed deserunt labore enim in sequi est odit, porro temporibus?</p>
-        <div class="price">$3.00</div>
-        <div class="btn">
-            <a href="#">Add to cart</a>
+    </div>
+    </div>
+    <div class="popuptext" id="myPopup3">
+        <div   class="productsPreview">
+        <div class="preview" data-target="p-1">
+            <p onclick="closeFormThree()">close</p>
+            <img src="./assets/bookImg/r3.jpg">
+            <h3>If We disapper here</h3>
+            <p>
+    They are marionettes under a concrete sky.
+    Pain shoots through Maeve Campbell’s body when she wakes cold and disoriented, locked in a neglected cement room.
+    Her drowsy eyes sweep the cell and land on a masculine, limp body across the room. Gripping his shoulder, she rolls him to his back, face angling toward her. Only it’s not who she thinks.
+    It’s not her husband.
+    And they aren’t alone. A stranger taunts them from within an old rusted speaker. A stranger who wants them to suffer.
+    With each passing day, and only each other to lean on, their determination becomes a fight not only for survival but for each other.
+    *If We Disappear Here features mature themes and content that may not be suitable for all audiences. Reader discretion is advised.*
+            </p>
+            <div class="price">$4.99</div>
+            <div class="btn">
+                <a href="#">Add to cart</a>
+            </div>
+    </div>
+    </div>
+    </div>
+    <div class="popuptext" id="myPopup4">
+        <div   class="productsPreview">
+        <div class="preview" data-target="p-1">
+            <p onclick="closeFormFour()">close</p>
+            <img src="./assets/bookImg/r4.jpg">
+            <h3>Strangers we know</h3>
+            <p>
+    The search for a serial killer leads a woman into the twisted tangle of her own family tree in a chilling novel by the #1 Amazon Charts bestselling author of The Missing Sister and Lies We Bury.
+    Adopted when she was only days old, Ivy Hon knows little about her lineage. But when she’s stricken with a mystery illness, the results of a genetic test to identify the cause attract the FBI. According to Ivy’s DNA, she’s related to the Full Moon Killer, who has terrorized the Pacific Northwest for decades. Ivy is the FBI’s hope to stop the enigmatic predator from killing again.
+    When an online search connects Ivy with her younger cousin, she heads to rural Rock Island, Washington, to meet the woman. Motivated by a secret desire to unmask a murderous relative, Ivy reaches out to what’s left of a family of strangers.
+    Discovering her mother’s tragic fate and her father’s disappearance is just the beginning. As Ivy ventures into a serial killer’s home territory, she realizes that she may be the next victim of poisonous blood ties.
+            </p>
+            <div class="price">$5.74</div>
+            <div class="btn">
+                <a href="#">Add to cart</a>
+            </div>
+    </div>
+    </div>
+    </div>
+    <div class="popuptext" id="myPopup5">
+        <div   class="productsPreview">
+        <div class="preview" data-target="p-1">
+            <p onclick="closeFormFive()">close</p>
+            <img src="./assets/bookImg/r5.jpg">
+            <h3>At the quite edge</h3>
+            <p>
+      A young mother has done everything possible to put the past behind her, but it might not be enough in a gripping novel of suspense by the Amazon Charts bestselling author of the Jane Doe novels.
+      Abandoned by her fugitive ex-husband, Lily Brown is rebuilding her life on the edge of a Kansas town that still feels the sting of his crimes. Lily lies low, managing the isolated storage facility where she lives with her twelve-year-old son, Everett, and planning a better future for them both. That requires keeping secrets. Everett has them too.
+      After breaking into a storage unit, Everett finds photographs and news clippings of five girls missing for decades. For Everett, it’s an adventure and a tempting mystery to solve. But digging further into a stranger’s obsession is putting Everett and his mother in the crosshairs of a killer.  
+      Then Lily’s ex resurfaces from the shadows. Just as suddenly, an attentive new man enters Lily’s life. And a suspicious detective, responding to reports of a prowler, watches every move Lily makes. It’s getting harder for Lily to know who to trust—or whose secrets pose the most frightening threat of all.
+  </p>
+            <div class="price">$4.99</div>
+            <div class="btn">
+                <a href="#">Add to cart</a>
+            </div>
         </div>
-    </div>
-    <div class="preview" data-target="p-4">
-        <img src="./assets/bookImg/r4.jpg">
-        <h3>Starngers we know</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur nulla ullam voluptatem mollitia tempore voluptatibus impedit! Doloribus quaerat minima voluptatum sed deserunt labore enim in sequi est odit, porro temporibus?</p>
-        <div class="price">$3.00</div>
-        <div class="btn">
-            <a href="#">Add to cart</a>
         </div>
-    </div>
-    <div class="preview" data-target="p-5">
-        <img src="./assets/bookImg/r5.jpg">
-        <h3>At the quite edge</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur nulla ullam voluptatem mollitia tempore voluptatibus impedit! Doloribus quaerat minima voluptatum sed deserunt labore enim in sequi est odit, porro temporibus?</p>
-        <div class="price">$3.00</div>
-        <div class="btn">
-            <a href="#">Add to cart</a>
         </div>
-    </div>
-    -->
-    </div>
+    </dv>
   </div>
 
   <div class="right">

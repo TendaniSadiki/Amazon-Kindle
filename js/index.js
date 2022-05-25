@@ -34,15 +34,36 @@ function sideScroll(element,direction,speed,distance,step){
     }, speed);
 }
 
-function myPopUp() {
+function myPopUpOne() {
     document.getElementById("myPopup").style.display = "block";
   }
-  
-  function closeForm() {
+function myPopUpTwo() {
+    document.getElementById("myPopup2").style.display = "block";
+}
+function myPopUpThree() {
+    document.getElementById("myPopup3").style.display = "block";
+}  
+function myPopUpFour() {
+    document.getElementById("myPopup4").style.display = "block";
+}
+function myPopUpFive() {
+    document.getElementById("myPopup5").style.display = "block";
+}
+function closeForm() {
     document.getElementById("myPopup").style.display = "none";
   }
-
-
+function closeFormTwo() {
+    document.getElementById("myPopup2").style.display = "none";
+}
+function closeFormThree() {
+    document.getElementById("myPopup3").style.display = "none";
+}
+function closeFormFour() {
+    document.getElementById("myPopup4").style.display = "none";
+}
+function closeFormFive() {
+    document.getElementById("myPopup5").style.display = "none";
+  }
 let readLastTimeBooks ={
     book1: 'The Silent Wife',
     book2:'Wildcat',
@@ -84,7 +105,7 @@ let newReleaseBooks ={
     book1: 'The Insider',
     book2:'Deadly Little Lies',
     book3: 'If We disapper here',
-    book4: 'Starngers we know',
+    book4: 'Strangers we know',
     book5: 'At the quite edge',
 }
 //print output
@@ -111,11 +132,11 @@ document.getElementById('bookNameReleaseAuthors5').innerHTML =AuthorsName.book5;
 
 
 let genres ={
-    book1: 'Action',
-    book2:'Fantasy',
+    book1: 'Thriller',
+    book2:'Thriller',
     book3: 'Romance',
     book4: 'Thriller',
-    book5: 'Sci Fi',
+    book5: 'Fiction',
 }
 //print output
 document.getElementById('bookGenres1').innerHTML =genres.book1;
