@@ -34,6 +34,9 @@ function sideScroll(element,direction,speed,distance,step){
     }, speed);
 }
 
+function cartPopUp() {
+    document.getElementById("cartpopup").style.display = "block";
+  }
 function myPopUpOne() {
     document.getElementById("myPopup").style.display = "block";
   }
@@ -49,6 +52,10 @@ function myPopUpFour() {
 function myPopUpFive() {
     document.getElementById("myPopup5").style.display = "block";
 }
+//close
+function closeCartPopUp() {
+    document.getElementById("cartpopup").style.display = "none";
+  }
 function closeForm() {
     document.getElementById("myPopup").style.display = "none";
   }

@@ -46,7 +46,7 @@
                   </a>
                   <a class="navlink" href="#">New release</a>
                   <a class="navlink" href="#">Futured</a>
-                  <a class="navlink" href="#"><i class="fas fa-shopping-cart"></i><span class="cartnumber">2</span></a>
+                  <a class="navlink" href="#"  onclick="cartPopUp()"><i class="fas fa-shopping-cart"></i><span class="cartnumber">2</span></a>
                   <a class="navlink" href="#"><img src="./assets/navbaricon.png" width="18px" height="18px"></a>
                 </div>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -54,6 +54,22 @@
                   </a>
                 
               </nav>
+              <div class="cartpopuptext" id="cartpopup">
+    <div   class="cartPreview">
+    <div class="previewContent" data-target="p-1">
+        <p onclick="closeCartPopUp()">close</p>
+        <img src="./assets/product.png">
+        <h3>Shopping Cart</h3>
+        <p>
+           
+        </p>
+        <div class="price">$6.10</div>
+        <div class="cartbtn">
+            <a href="#">Checkout</a>
+        </div>
+    </div>
+    </div>
+    </div>
           </div>
       </div>
   </header>
@@ -143,7 +159,7 @@
             The thrilling novel of espionage and murder set in the dark heart of Westminster, from the UK's most exciting new spy writer
 A Russian defector is found brutally murdered in a London hotel.
 Only four people knew he had turned - the four most important and powerful figures in Whitehall.
-There's only one conclusion:
+There's only one conclusion: 
 A mole has infiltrated the highest levels of the nation's security.
 Operating in secret from within Westminster's darkest corners, former spy, Solomon Vine, must uncover the traitor.
 Because Britain's future hangs in the balance.

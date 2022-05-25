@@ -202,7 +202,7 @@ overflow-y: hidden;
   list-style: none;
   border-radius: 20px; ;
   cursor: pointer;
-  padding: 2px;
+  padding: 8px;
   cursor: pointer;
   
  
@@ -239,7 +239,7 @@ overflow-y: hidden;
   right: 15px;
   border: 3px solid #F6F5F3;
   z-index: 9;
-}
+  }
 .cartnumber{
   margin: 0;
   padding: 2px;
@@ -323,6 +323,103 @@ overflow-y: hidden;
 }
 
 
+.cartPreview{
+  position: fixed;
+  top: 0;
+ right:0;
+ margin-left: 400px;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  
+  
+  
+}
+.cartpopuptext {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #F6F5F3;
+  z-index: 9;
+  }
+.cartnumber{
+  margin: 0;
+  padding: 2px;
+  background: red;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+.cartPreview .previewContent{
+  
+  padding: 2rem;
+  text-align: center;
+  background: #fff;
+  
+  margin: 2rem;
+ 
+}
+.cartPreview .previewContent img{
+  height: 5rem;
+ }
+ 
+
+/* The actual popup */
+.popup .cartpopuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .cartpopuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+.cartbtn a{
+  text-decoration:none;
+  border:2px groove black;
+  padding: 4px;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+
+
+
 .right {
   background-color: #e5e5e5;
   float: right;
@@ -384,13 +481,13 @@ overflow-y: hidden;
 }
 
 
-@media only screen and (min-width: 748px) {
+@media only screen and (min-width: 822px) {
   .fa-bars{
     display: none;
   }
   
 }
-@media only screen and (max-width: 748px) {
+@media only screen and (max-width: 822px) {
   /* For mobile phones: */
   body{
     overflow: auto;
