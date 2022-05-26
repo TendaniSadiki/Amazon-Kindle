@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="./css/validation.css">
+    <link rel = "icon" href = "./assets/download.jfif" type = "image/x-icon"> 
+</head>
+<body>
+    <div class="login" >
+        <form name='form-login' method="read" >
+            <h1>SIGN IN</h1>
+            <label for="userName">Email</label>
+            <input type="email" id="email" placeholder="Email" required>
+            <label for="userPw">Password</label>
+            <input type="password" id= "pwd" placeholder="Password" required>
+            <input id= "login_btn" type="submit" value="Login" onclick="signin()">
+            <a style="color: #F6F5F3;" href="./signup.html">Create account</a>
+        </form>
+    </div>
+    
+   
+</body>
+<script src="validation.js"></script>
+</html>

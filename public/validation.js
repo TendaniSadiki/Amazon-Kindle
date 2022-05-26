@@ -1,5 +1,4 @@
-function signup(e){
-    e.preventDefault()
+function signup(){
 var names = document.getElementById('name');
 let surname = document.getElementById('surname');
 let mail = document.getElementById('email');
@@ -7,7 +6,7 @@ let Password = document.getElementById('pwd');
 let lowerCaseLetters = /[a-z]/g;
 let upperCaseLetters = /[A-Z]/g;
 let numbers = /[0-9]/g;
-    
+
     
     sessionStorage.setItem('name', names.value);
     sessionStorage.setItem('surname',surname.value);
