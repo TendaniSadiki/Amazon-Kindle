@@ -1,76 +1,4 @@
-function myFunction() {
-    var x = document.getElementById("myLinks");
-    if (x.style.display === "block") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "block";
-    
-    }
-  }
 
-//Scroll
-var button = document.getElementById('scrollRight');
-button.onclick = function () {
-    var container = document.getElementById('scrollbar');
-    sideScroll(container,'right',25,100,10);
-};
-var back = document.getElementById('scrollLeft');
-back.onclick = function () {
-    var container = document.getElementById('scrollbar');
-    sideScroll(container,'left',25,100,10);
-};
-function sideScroll(element,direction,speed,distance,step){
-    scrollAmount = 0;
-    var slideTimer = setInterval(function(){
-        if(direction == 'left'){
-            element.scrollLeft -= step;
-        } else {
-            element.scrollLeft += step;
-        }
-        scrollAmount += step;
-        if(scrollAmount >= distance){
-            window.clearInterval(slideTimer);
-        }
-    }, speed);
-}
-
-function cartPopUp() {
-    document.getElementById("cartpopup").style.display = "block";
-  }
-function myPopUpOne() {
-    document.getElementById("myPopup").style.display = "block";
-  }
-function myPopUpTwo() {
-    document.getElementById("myPopup2").style.display = "block";
-}
-function myPopUpThree() {
-    document.getElementById("myPopup3").style.display = "block";
-}  
-function myPopUpFour() {
-    document.getElementById("myPopup4").style.display = "block";
-}
-function myPopUpFive() {
-    document.getElementById("myPopup5").style.display = "block";
-}
-//close
-function closeCartPopUp() {
-    document.getElementById("cartpopup").style.display = "none";
-  }
-function closeForm() {
-    document.getElementById("myPopup").style.display = "none";
-  }
-function closeFormTwo() {
-    document.getElementById("myPopup2").style.display = "none";
-}
-function closeFormThree() {
-    document.getElementById("myPopup3").style.display = "none";
-}
-function closeFormFour() {
-    document.getElementById("myPopup4").style.display = "none";
-}
-function closeFormFive() {
-    document.getElementById("myPopup5").style.display = "none";
-  }
 let readLastTimeBooks ={
     book1: 'The Silent Wife',
     book2:'Wildcat',
@@ -177,3 +105,112 @@ document.getElementById('authorbook1').innerHTML =famousAuthorsBooks.authorbooks
 document.getElementById('authorbook2').innerHTML =famousAuthorsBooks.authorbooks2;
 document.getElementById('authorbook3').innerHTML =famousAuthorsBooks.authorbooks3;
 
+let cart = document.querySelectorAll(".addToCart");
+console.log(cart)
+ 
+for(let i = 0; i<cart.length;i++){
+    cart[i].addEventListener('click', ()=>{
+        totalCost(products[i]);
+    })
+}
+function totalCost(product){
+    sessionStorage.setItem('totalCost', product.productPrice);
+}
+
+let products = [
+    {productName:'The Insider',
+     productPrice:32.00,
+     inCart:0
+},
+{productName:'Deadly Little Lies',
+     productPrice:49.19,
+     inCart:0
+},
+{productName:'If We disapper here',
+     productPrice:62.22,
+     inCart:0
+},
+{productName:'Strangers we know',
+     productPrice:71.33,
+     inCart:0
+},
+{productName:'At the quite edge',
+     productPrice:40.50,
+     inCart:0
+}
+
+]
+
+function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    
+    }
+  }
+
+//Scroll
+var button = document.getElementById('scrollRight');
+button.onclick = function () {
+    var container = document.getElementById('scrollbar');
+    sideScroll(container,'right',25,100,10);
+};
+var back = document.getElementById('scrollLeft');
+back.onclick = function () {
+    var container = document.getElementById('scrollbar');
+    sideScroll(container,'left',25,100,10);
+};
+function sideScroll(element,direction,speed,distance,step){
+    scrollAmount = 0;
+    var slideTimer = setInterval(function(){
+        if(direction == 'left'){
+            element.scrollLeft -= step;
+        } else {
+            element.scrollLeft += step;
+        }
+        scrollAmount += step;
+        if(scrollAmount >= distance){
+            window.clearInterval(slideTimer);
+        }
+    }, speed);
+}
+
+function cartPopUp() {
+    document.getElementById("cartpopup").style.display = "block";
+  }
+function myPopUpOne() {
+    document.getElementById("myPopup").style.display = "block";
+  }
+function myPopUpTwo() {
+    document.getElementById("myPopup2").style.display = "block";
+}
+function myPopUpThree() {
+    document.getElementById("myPopup3").style.display = "block";
+}  
+function myPopUpFour() {
+    document.getElementById("myPopup4").style.display = "block";
+}
+function myPopUpFive() {
+    document.getElementById("myPopup5").style.display = "block";
+}
+//close
+function closeCartPopUp() {
+    document.getElementById("cartpopup").style.display = "none";
+  }
+function closeForm() {
+    document.getElementById("myPopup").style.display = "none";
+  }
+function closeFormTwo() {
+    document.getElementById("myPopup2").style.display = "none";
+}
+function closeFormThree() {
+    document.getElementById("myPopup3").style.display = "none";
+}
+function closeFormFour() {
+    document.getElementById("myPopup4").style.display = "none";
+}
+function closeFormFive() {
+    document.getElementById("myPopup5").style.display = "none";
+  }
