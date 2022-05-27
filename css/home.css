@@ -323,7 +323,14 @@ overflow-y: hidden;
   to {opacity:1 ;}
 }
 
-
+.cartnumber{
+  margin: 0;
+  padding: 2px;
+  background: red;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
 .cartPreview{
   position: fixed;
   top: 0;
@@ -332,6 +339,8 @@ overflow-y: hidden;
   min-height: 100vh;
   width: 100%;
   display: flex;
+  align-items: center;
+  justify-content: center;
   
   
   
@@ -344,18 +353,11 @@ overflow-y: hidden;
   border: 3px solid #F6F5F3;
   z-index: 9;
   }
-.cartnumber{
-  margin: 0;
-  padding: 2px;
-  background: red;
-  height: 30px;
-  width: 30px;
-  border-radius: 50%;
-}
+
 
 .cartPreview .previewContent{
   
-  padding: 2rem;
+  padding: 4rem;
   text-align: center;
   background: #fff;
   
@@ -494,9 +496,13 @@ overflow-y: hidden;
     overflow: auto;
     overflow-x: hidden;
   }
-  .menu, .main, .right, .topnav,.newRelease, .profileContent,.readlastTime {
+  .menu, .main,.right, .topnav,.newRelease, .profileContent,.readlastTime {
     width: 100%;
     margin: 0;
+    
+  }
+   .right, .topnav,.newRelease, .readlastTime{
+    padding: 0 20px
   }
   .kindleContent{
     margin-top: 100px;
@@ -619,7 +625,8 @@ overflow-y: hidden;
       float: left;
       width: 100%;
       max-width: 100%;
-      padding: 0 20px
+      margin: 0;
+      
       
      
     }
@@ -651,30 +658,17 @@ overflow-y: hidden;
     }
     .readlastTime ul li{
       list-style: none;
-      
       height: auto;
-      margin-left: -50px;
-
-      
-      
+      margin-left: -50px; 
     }
-    
     .readlastTime ul li p{
-      margin-top: 5px;
-      
-      
+      margin-top: 5px; 
     }
     .readlastTime ul li div{
       height:40rem;
       width: 100%;
-    
-      
     }
-    
-  
 }
-
-
   /* For Large screen */
   @media only screen and (min-width: 1200px) {
 .navContent{
@@ -794,6 +788,9 @@ overflow-y: hidden;
 
 .productContent img{
   margin-left: 80px;
+}
+.fa-bars{
+  display: none;
 }
 
   }

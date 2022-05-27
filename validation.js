@@ -1,5 +1,5 @@
-function signup(e){
-    e.preventDefault()
+function signup(){
+    
 var names = document.getElementById('name');
 let surname = document.getElementById('surname');
 let mail = document.getElementById('email');
