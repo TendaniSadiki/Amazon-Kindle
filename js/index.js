@@ -159,6 +159,7 @@ function cartNumbers(){
 }
 
 function totalCost(product){
+    
    let cartCost = sessionStorage.getItem('totalCost');
     if(cart != null){
         cartCost = parseInt(cartCost);
@@ -168,6 +169,11 @@ function totalCost(product){
         sessionStorage.setItem('totalCost',product.productPrice);
 
     }
+}
+// pass product co  cart page
+function cartHandler(){
+    
+    document.querySelector("#totalCost").textContent = sessionStorage.getItem("totalCost");
 }
 
 

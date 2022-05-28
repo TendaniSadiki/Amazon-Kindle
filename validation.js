@@ -13,6 +13,8 @@ let numbers = /[0-9]/g;
     sessionStorage.setItem('surname',surname.value);
     sessionStorage.setItem('mail',mail.value);
     sessionStorage.setItem('Password', Password.value);
+
+
     
 if(names.value.length == 0 && surname.value.length == 0 && mail.value.length == 0 && Password.value.length == 0){
     alert('Please fill in all inputs');
@@ -108,7 +110,7 @@ window.open("home.html");}
     // }
        }
 
-        function chaneTheImage(){
+        function changeTheImage(){
             const img=document.getElementById("userImg");
             img.src=sessionStorage.getItem("img");
             document.getElementById("userName").innerText = sessionStorage.getItem("name");
