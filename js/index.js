@@ -105,21 +105,16 @@ document.getElementById('authorbook1').innerHTML =famousAuthorsBooks.authorbooks
 document.getElementById('authorbook2').innerHTML =famousAuthorsBooks.authorbooks2;
 document.getElementById('authorbook3').innerHTML =famousAuthorsBooks.authorbooks3;
 
+
+
+
+
+
 let cart = document.querySelectorAll(".addToCart");
 console.log(cart)
- 
-for(let i = 0; i<cart.length;i++){
-    cart[i].addEventListener('click', ()=>{
-        totalCost(products[i]);
-    })
-}
-function totalCost(product){
-    sessionStorage.setItem('totalCost', product.productPrice);
-}
-
 let products = [
     {productName:'The Insider',
-     productPrice:32.00,
+     productPrice:32.50,
      inCart:0
 },
 {productName:'Deadly Little Lies',
@@ -139,7 +134,43 @@ let products = [
      inCart:0
 }
 
-]
+] 
+
+
+for(let i = 0; i<cart.length;i++){
+    cart[i].addEventListener('click', ()=>{
+        cartNumbers(products[i]);
+        totalCost(products[i]);
+        
+    })
+}
+function cartNumbers(){
+    let productNumbers = sessionStorage.getItem('cartNumbers');
+    productNumbers = parseInt(productNumbers);
+    if(productNumbers){
+        sessionStorage.setItem('cartNumbers', productNumbers+1);
+        document.querySelector('.cartnumber').textContent=productNumbers+1;    
+    }
+    else{
+    sessionStorage.setItem('cartNumbers', 1);
+    console.log(document.querySelector('.cartnumber'));
+    document.querySelector('.cartnumber').textContent=1;
+    }
+}
+
+function totalCost(product){
+   let cartCost = sessionStorage.getItem('totalCost');
+    if(cart != null){
+        cartCost = parseInt(cartCost);
+        sessionStorage.setItem('totalCost',cartCost+product.productPrice);
+    }
+    else{
+        sessionStorage.setItem('totalCost',product.productPrice);
+
+    }
+}
+
+
 
 function myFunction() {
     var x = document.getElementById("myLinks");
