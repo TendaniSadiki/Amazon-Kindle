@@ -9,10 +9,10 @@ let upperCaseLetters = /[A-Z]/g;
 let numbers = /[0-9]/g;
     
     
-    sessionStorage.setItem('name', names.value);
-    sessionStorage.setItem('surname',surname.value);
-    sessionStorage.setItem('mail',mail.value);
-    sessionStorage.setItem('Password', Password.value);
+    localStorage.setItem('name', names.value);
+    localStorage.setItem('surname',surname.value);
+    localStorage.setItem('mail',mail.value);
+    localStorage.setItem('Password', Password.value);
 
 
     
@@ -63,8 +63,8 @@ else{
 
 
 function signin(){
-    var logmail=sessionStorage.getItem('mail');
-    var lopw=sessionStorage.getItem('Password');
+    var logmail=localStorage.getItem('mail');
+    var lopw=localStorage.getItem('Password');
     var maibox=document.getElementById('email').value;
     var passbox=document.getElementById('pwd').value;
     var location = '';
@@ -80,7 +80,7 @@ function signin(){
         alert("Your Email & Password empty");
     }
     else{
-        alert("Welcome " +sessionStorage.getItem('userName'));
+        alert("Welcome " +localStorage.getItem('userName'));
 window.open("home.html");}
    
     // if(maibox == '' && passbox == ''){
@@ -105,13 +105,13 @@ window.open("home.html");}
     
     // }
     // else {
-    //     alert("Welcome " +sessionStorage.getItem('name'));
+    //     alert("Welcome " +localStorage.getItem('name'));
     //     window.open("home.html");
     // }
        }
 
         function changeTheImage(){
             const img=document.getElementById("userImg");
-            img.src=sessionStorage.getItem("img");
-            document.getElementById("userName").innerText = sessionStorage.getItem("name");
+            img.src=localStorage.getItem("img");
+            document.getElementById("userName").innerText = localStorage.getItem("name");
         }

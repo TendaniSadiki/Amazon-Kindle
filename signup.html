@@ -44,7 +44,7 @@
     img.addEventListener("change", function(){
     var readimgfile= new FileReader();
         readimgfile.onload= function(){
-            sessionStorage.setItem('img', readimgfile.result);
+            localStorage.setItem('img', readimgfile.result);
             
         }
     readimgfile.readAsDataURL(this.files[0]);
