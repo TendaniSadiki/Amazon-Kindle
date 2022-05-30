@@ -39,9 +39,9 @@ let newReleaseBooks ={
     newRelease:'New Release',
     book1: 'The Insider',
     book2:'Deadly Little Lies',
-    book3: 'If We disapper here',
-    book4: 'Strangers we know',
-    book5: 'At the quite edge',
+    book3: 'If We Disapper Here',
+    book4: 'Strangers Ee know',
+    book5: 'At The Quite Edge',
 }
 //print output
 document.getElementById('newReleaseHeading').innerHTML = newReleaseBooks.newRelease;
