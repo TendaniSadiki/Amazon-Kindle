@@ -171,13 +171,14 @@ function totalCost(product){
         localStorage.setItem('totalCost',cartCost+product.productPrice);
     }
     else{
-        localStorage.setItem('totalCost',product.productPrice);
+        localStorage.setItem('totalCost',product.productPrice); 
 
     }
 }
 // pass product co  cart page
 function cartHandler(){
-    
+    document.querySelector(".items").textContent = localStorage.getItem("cartNumbers");
+    document.querySelector("#totalCost").textContent = localStorage.getItem("totalCost");
     document.querySelector("#totalCost").textContent = localStorage.getItem("totalCost");
 }
 
