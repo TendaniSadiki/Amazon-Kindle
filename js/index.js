@@ -158,7 +158,12 @@ function cartNumbers(){
     }
 }
 
+
 function totalCost(product){
+
+    if( localStorage.getItem('totalCost') === null){
+        localStorage.setItem('totalCost', "0");
+    }
     
    let cartCost = localStorage.getItem('totalCost');
     if(cart != null){
