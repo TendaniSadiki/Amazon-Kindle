@@ -449,6 +449,14 @@ overflow-y: hidden;
     display: none;
     visibility: hidden;
   }
+  .mobileNav{
+    visibility: hidden;
+    display: none;
+  }
+  #mobileSidebar{
+    display: none;
+    visibility: hidden;
+  }
   
 }
 @media only screen and (max-width: 822px) {
@@ -457,6 +465,18 @@ overflow-y: hidden;
     overflow: auto;
     overflow-x: hidden;
   }
+  .fa-arrow-left,.fa-arrow-right{
+  visibility: hidden;
+  }
+  .desktopNav{
+    visibility: hidden;
+    display: none;
+  }
+  .desktopSidebar{
+    display: none;
+    visibility: hidden;
+  }
+ 
   .menu, .main,.right, .topnav,.newRelease, .profileContent,.readlastTime {
     width: 100%;
     margin: 0;

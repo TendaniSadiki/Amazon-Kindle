@@ -20,11 +20,13 @@
        <div class="sidebarItem">
         <div class="sidebarWrapper">
           <ul>
+             <div class="desktopSidebar">
           <li class="sidebarContent"><span> <a><img src="./assets/bookImg/k.png" class="kIcon" > My <br> Kindle Board</a></span> </li>
           <li class="sidebarContent"><span> <a><img src="./assets/bookImg/update.png" class="collectionIcon" >Collections</a></span></li>
           <li class="sidebarContent"><span> <a><img class="savedIcon" src="./assets/bookImg/bookmark-ribbon_icon-icons.com_72842.ico" >Saved </a></span></li>
           <li class="sidebarContent"><span> <a><i class="fas fa-user"></i> Profile</a></span></li>
           <li class="sidebarContent"><span> <a href="./index.html"><i onclick="logout()" class="fas fa-sign-out-alt"></i> Logout</a> </a></span></li>
+             </div>
           </ul>
           <div class="productContent">
          <img src="./assets/product.png" width="100px" height="100px" >
@@ -39,15 +41,36 @@
           </div>
           <div class="navContent">
               <nav>
+                <li class="sidebarContent" id="mobileSidebar"> <a href="#" class="searchbar" id="navLink" >
+                    <input type="search" placeholder="Search your books">
+                    <i class="fas fa-search"></i>
+                 </a></li>
                 <div id="myLinks">
+                    
+                    <div class="desktopNav">
                   <a href="#" class="searchbar" id="navLink" >
                      <input type="search" placeholder="Search your books">
                      <i class="fas fa-search"></i>
+                     
                   </a>
                   <a class="navlink" href="#">New release</a>
                   <a class="navlink" href="#">Futured</a>
                   <a class="navlink" href="./shoppingcart.html"><i class="fas fa-shopping-cart"></i><span class="cartnumber">0</span></a>
                   <a class="navlink" href="#"><img src="./assets/navbaricon.png" width="18px" height="18px"></a>
+                </div>
+                  <div class="mobileNav">
+                  <a class="navlink" href="#">
+                      <span> <a><img src="./assets/bookImg/k.png" class="kIcon" > My <br> Kindle Board</a></span>
+                  </a>
+                  <a class="navlink" href="#">Futured</a>
+                  <a class="navlink" href="./shoppingcart.html"><i class="fas fa-shopping-cart"></i><span class="cartnumber">0</span></a>
+                  <a class="navlink" href="#"><img src="./assets/navbaricon.png" width="18px" height="18px"></a>
+                  
+                  <a><img src="./assets/bookImg/update.png" class="collectionIcon" >Collections</a>
+                  <a><img class="savedIcon" src="./assets/bookImg/bookmark-ribbon_icon-icons.com_72842.ico" >Saved </a>
+                  <a><i class="fas fa-user"></i> Profile</a></span></li>
+                  <a href="./index.html"><i onclick="logout()" class="fas fa-sign-out-alt"></i> Logout</a> </a>
+                  </div>
                 </div>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                     <i class="fa fa-bars"></i>
