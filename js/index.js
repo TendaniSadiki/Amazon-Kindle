@@ -108,7 +108,7 @@ document.getElementById('authorbook3').innerHTML =famousAuthorsBooks.authorbooks
 
 
 
-
+/*
 
 let cart = document.querySelectorAll(".addToCart");
 console.log(cart)
@@ -141,6 +141,7 @@ for(let i = 0; i<cart.length; i++){
     cart[i].addEventListener('click', ()=>{
         cartNumbers(products[i]);
         totalCost(products[i]);
+        bookName(products[i])
         
     })
 }
@@ -157,7 +158,10 @@ function cartNumbers(){
     document.querySelector('.cartnumber').textContent=1;
     }
 }
-
+function bookName(product){
+    cartBookName = localStorage.setItem('bookName',);
+    document.querySelector('.title').textContent="";
+}
 
 function totalCost(product){
 
@@ -167,6 +171,8 @@ function totalCost(product){
     
    let cartCost = localStorage.getItem('totalCost');
     if(cart != null){
+        
+        
         cartCost = parseInt(cartCost);
         localStorage.setItem('totalCost',cartCost+product.productPrice);
     }
@@ -174,6 +180,7 @@ function totalCost(product){
         localStorage.setItem('totalCost',product.productPrice); 
 
     }
+
 }
 // pass product co  cart page
 function cartHandler(){
@@ -182,7 +189,7 @@ function cartHandler(){
     document.querySelector("#totalCost").textContent = localStorage.getItem("totalCost");
 }
 
-
+*/
 
 function myFunction() {
     var x = document.getElementById("myLinks");
