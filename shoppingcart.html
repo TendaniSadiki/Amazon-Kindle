@@ -5,36 +5,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+    <link rel="stylesheet" href="./css/home.css" >
+
 <script src="https://kit.fontawesome.com/c46e19eb27.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body onload="cartHandler()">
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Shopping Cart UI</title>
+        <link rel="stylesheet" type="text/css" href="./css/cart.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,900" rel="stylesheet">
+    </head>
+    <body>
+      
+       <div class="CartContainer">
+        
+              <div class="Header">
+                  <h3 class="Heading">Shopping Cart</h3>
+                  <h5 class="Action">Remove all</h5>
+              </div>
     
-        <div class="header__cart">
-            <ul>
-              <li class="header__submenu" id="submenu">
-                <button class="header__cart-btn" id="toggle-cart-btn"><svg class="cart" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M17,18C15.89,18 15,18.89 15,20A2,2 0 0,0 17,22A2,2 0 0,0 19,20C19,18.89 18.1,18 17,18M1,2V4H3L6.6,11.59L5.24,14.04C5.09,14.32 5,14.65 5,15A2,2 0 0,0 7,17H19V15H7.42A0.25,0.25 0 0,1 7.17,14.75C7.17,14.7 7.18,14.66 7.2,14.63L8.1,13H15.55C16.3,13 16.96,12.58 17.3,11.97L20.88,5.5C20.95,5.34 21,5.17 21,5A1,1 0 0,0 20,4H5.21L4.27,2M7,18C5.89,18 5,18.89 5,20A2,2 0 0,0 7,22A2,2 0 0,0 9,20C9,18.89 8.1,18 7,18Z"></path>
-      </svg> Your Cart</button>
-                <div id="shopping-cart" class="shopping-cart-container">
-                  <table id="cart-content">
-                    <thead>
-                      <tr>
-                        <th>Image</th>
-                        <th>Name</th>
-                        <th>Price</th>
-                        <th></th>
-                      </tr>
-                    </thead>
-                    <tbody class="productBody"></tbody>
-                  </table>
-                  <p class="total-container" id="total-price"></p>
-                  <a href="#" id="checkout-btn" class="cart-btn">Checkout</a>
-                  <a href="#" id="clear-cart" class="cart-btn">Clear Cart</a>
+              <div class="Cart-Items">
+                    <div class="image-box">
+                        <img src="./assets/bookImg/r1.jpg"  height="120px" />
+                    </div>
+                    <div class="about">
+                        <h1 class="title">Book name</h1>
+                        <h3 class="subtitle">250ml</h3>
+                        <img src="./assets/veg.png" height="30px"/>
+                    </div>
+                    <div class="counter">
+                        <div class="btn">-</div>
+                        <div class="count">2</div>
+                        <div class="btn">+</div>
+                    </div>
+                    <div class="prices">
+                        <div class="amount">R32.00</div>
+                        <div class="save"><u>Save for later</u></div>
+                        <div class="remove"><u>Remove</u></div>
+                    </div>
+              </div>
+    
+              <div class="Cart-Items pad">
+                    <div class="image-box">
+                        <img src="./assets/bookImg/r2.jpg" height="120px"  />
+                    </div>
+                    <div class="about">
+                        <h1 class="title">Book name</h1>
+                        <h3 class="subtitle">250ml</h3>
+                        <img src="./assets/veg.png" height="30px" />
+                    </div>
+                    <div class="counter">
+                        <div class="btn">-</div>
+                        <div class="count">1</div>
+                        <div class="btn">+</div>
+                    </div>
+                    <div class="prices">
+                        <div class="amount">R49.19</div>
+                        <div class="save"><u>Save for later</u></div>
+                        <div class="remove"><u>Remove</u></div>
+                    </div>
+              </div>
+            <hr> 
+            <div class="checkout">
+            <div class="total">
+                <div>
+                    <div class="Subtotal">Sub-Total</div>
+                    <div class="items"></div>
+                    <span> Items</span>
                 </div>
-              </li>
-            </ul>
-          </div>
+                <div class="total-amount" id='totalCost'></div>
+            </div>
+            <button class="button">Checkout</button></div>
+       </div>
        <script src="./js/index.js"></script>
+       <script src="./product.js"></script>
     </body>
     </html>
