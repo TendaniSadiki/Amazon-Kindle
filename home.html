@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="./css/home.css" >
 <script src="https://kit.fontawesome.com/c46e19eb27.js" crossorigin="anonymous"></script>
 </head>
-<body onload="changeTheImage()">
+<body onload="changeTheImage()" onload="cartNumbers()">
 <div class="kindleContent">
   <div style="overflow:auto">
     <div class="menu">
@@ -172,11 +172,6 @@ Because Britain's future hangs in the balance.
 And with it, the fate of the whole world . . .
 Praise for Matthew Richardson
         </p>
-        <div class="counter">
-            <div class="btn">-</div>
-            <div class="count">2</div>
-            <div class="btn">+</div>
-        </div>
         <div class="price">R32.50</div>
         <div class="addBtn">
             <a href="#" onclick="addtoCart(0)" class="addToCart">Add to cart</a>
@@ -309,6 +304,9 @@ Praise for Matthew Richardson
 <script src="./validation.js"></script>
 <script src="./js/index.js"></script>
 <script src="./product.js"></script>
+<script>
+    document.querySelector(".cartnumber").textContent =  sessionStorage.getItem("cartNumbers");
+</script>
 </body>
 </html>
 

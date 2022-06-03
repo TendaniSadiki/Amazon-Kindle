@@ -182,13 +182,15 @@ function pullinformation(){
             <div class="prices">
                 <div class="amount">R ${cartArray[i].productPrice}</div>
                 <div class="save"><u>Save for later</u></div>
-                <div class="remove"><u>Remove</u></div>
+                <div class="removeBtn"><u>Remove</u></div>
             </div>
         </div>`;
         
     }
     document.getElementById("Cart").innerHTML = cartItems;
 }
+
+
 
 // pass product co  cart page
 

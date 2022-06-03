@@ -1,0 +1,27 @@
+body{
+
+    margin: 0;
+    height: auto;
+    background: #F6F5F3;
+    width: 100%;
+    color: black;  
+    
+   
+}
+* {
+     box-sizing: border-box;
+}
+body{
+      min-height: 100%;
+}
+.CartContainer{
+    height: 100%;
+     min-height: 100%;
+     margin: auto;
+}
+.Header{
+background: yellow;
+}
+.Action{
+background: blue;
+}
