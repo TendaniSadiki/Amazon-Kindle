@@ -103,7 +103,7 @@ var productCart = [];
 
 function addtoCart(id){
 
-    var quanitityIncreased = false;
+    var quantityIncreased = false;
     //Find if cart already has items.
     //If yes get items from sessionStorage and save them into array
     if(sessionStorage.getItem("items") !== null){
@@ -113,14 +113,14 @@ function addtoCart(id){
     //find the same product
     for(let i = 0; i < cartArray.length; i++){
            if(cartArray[i].id === id){
-               cartArray[i].quanitity += 1;
-               quanitityIncreased = true;
+               cartArray[i].quantity += 1;
+               quantityIncreased = true;
                break;
            }
            
     }
     
-    if(!quanitityIncreased){
+    if(!quantityIncreased){
         //Find product with the same id
         for(let i = 0; i < products.length; i++){
             //Add product to cart array
@@ -133,7 +133,7 @@ function addtoCart(id){
                         isbn:products[i].isbn,
                         imgSrc: products[i].imgSrc,
                         productPrice:products[i].productPrice,
-                        quanitity: 1 
+                        quantity: 1 
                     };
                 
                 cartArray.push(itemArray);
@@ -176,7 +176,7 @@ function pullinformation(){
             </div>
             <div class="counter">
                 <div class="btn">+</div>
-                <div class="count">${cartArray[i].quanitity}</div>
+                <div class="count">${cartArray[i].quantity}</div>
                 <div class="btn">-</div>
             </div>
             <div class="prices">
